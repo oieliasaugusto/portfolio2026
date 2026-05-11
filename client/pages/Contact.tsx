@@ -1,0 +1,68 @@
+import React, { useState } from "react";
+
+export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const formattedMessage = `Hello, I'm ${name} (${email}). ${message}`;
+
+  const handleSendWhatsApp = () => {
+    if (!name.trim() || !email.trim() || !message.trim()) return;
+    const numeroWhatsApp = "5521996364203";
+    const textoCodificado = encodeURIComponent(formattedMessage);
+    const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`;
+    window.open(linkWhatsApp, "_blank");
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  return (
+    <div className="min-h-screen text-foreground bg-black pt-21 pb-16 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
+      <div className="w-full max-w-2xl">
+        <h1 className="text-4xl md:text-4xl md:leading-[1.3] font-bold tracking-tight mb-8 text-center">Vamos tomar um café e conversar sobre o seu projeto?</h1>
+        {/* <p className="text-center text-[hsl(var(--muted-foreground))] mt-8 mb-12">
+          Preencha os dados abaixo e conversaremos no WhatsApp.
+        </p> */}
+
+        <div className="glass-card rounded-lg flex flex-col transition-shadow w-full">
+          <div className="p-8 flex flex-col flex-grow justify-center gap-6">
+            {/* <h2 className="text-2xl lg:text-3xl text-[hsl(var(--foreground))] mb-2 leading-tight">Vamos tomar um café e conversar sobre o seu projeto?</h2> */}
+
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Nome"
+              className="w-full bg-white/5 border border-white/10 text-[hsl(var(--foreground))] placeholder-[hsl(var(--foreground))]/40 px-6 py-4 rounded-xl text-lg font-light focus:outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] transition-all"
+            />
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="E-mail"
+              className="w-full bg-white/5 border border-white/10 text-[hsl(var(--foreground))] placeholder-[hsl(var(--foreground))]/40 px-6 py-4 rounded-xl text-lg font-light focus:outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] transition-all"
+            />
+            <textarea
+              id="mensagem-usuario"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Sua mensagem"
+              className="w-full bg-white/5 border border-white/10 text-[hsl(var(--foreground))] placeholder-[hsl(var(--foreground))]/40 px-6 py-4 h-[160px] rounded-xl text-lg font-light focus:outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] flex-grow resize-none transition-all"
+            />
+            <button
+              onClick={handleSendWhatsApp}
+              disabled={!name.trim() || !email.trim() || !message.trim()}
+              className="bg-[hsl(var(--primary))] w-full text-white text-xl font-medium py-4 rounded-xl flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed mt-2"
+            >
+              Enviar
+              <img src="/whatsapp.svg" alt="WhatsApp" className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+        <video src="Cofee.mov" autoPlay loop muted className="position absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" />
+      </div>
+    </div>
+  );
+}

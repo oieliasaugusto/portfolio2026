@@ -1,0 +1,132 @@
+/** @import must precede all other statements */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 261 88% 5.9%;
+    --foreground: 40 33% 98%;
+    --card: 240 4% 22%;
+    --card-foreground: 40 33% 98%;
+    --popover: 261 88% 5.9%;
+    --popover-foreground: 40 33% 98%;
+    --primary: 244 72% 54%;
+    --tertiary: 220 90% 70%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 240 4% 22%;
+    --secondary-foreground: 40 33% 98%;
+    --muted: 270 11% 85%;
+    --muted-foreground: 270 11% 85%;
+    --accent: 244 72% 54%;
+    --accent-foreground: 40 33% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 33% 98%;
+    --border: 240 4% 22%;
+    --input: 240 4% 22%;
+    --ring: 244 72% 54%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+    cursor: default;
+  }
+
+  html,
+  body {
+    @apply bg-black text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Unbounded", system-ui;
+  }
+
+  p,
+  li,
+  span,
+  button,
+  textarea,
+  input {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.01em;
+  }
+
+  /* Scrollbar Customization */
+  html {
+    scrollbar-color: hsl(var(--primary)) transparent;
+    scrollbar-width: thin;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 10px;
+  }
+}
+
+@layer components {
+
+  /* GSAP Section Stacking Base */
+  .gsap-section {
+    @apply relative z-10 bg-transparent flex flex-col justify-center min-h-screen;
+    backdrop-filter: blur(20px);
+    will-change: transform, opacity;
+  }
+
+  /* Glassmorphism Utility */
+  .glass-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-xl transition-all duration-300;
+    box-shadow: 0 8px 32px rgba(65, 53, 222, 0.1);
+  }
+
+  .glass-card:hover {
+    @apply bg-white/10 border-white/20;
+  }
+}
+
+/* Animations */
+@keyframes cursor-blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: cursor-blink 0.8s step-end infinite;
+}
+
+/* Specific component fixes */
+#Name {
+  font-family: "Unbounded", system-ui;
+  @apply font-medium tracking-tight;
+}
+
+#hero h1,
+span {
+  @apply leading-[1.2];
+  font-family: "Unbounded", system-ui;
+  // font-size: 3rem;
+  line-height: 1;
+}
+
+/* Clean up old ID-based styles that are now handled by Tailwind classes */
