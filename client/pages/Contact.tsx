@@ -5,7 +5,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const formattedMessage = `Hello, I'm ${name} (${email}). ${message}`;
+  const formattedMessage = `Olá, sou ${name} (${email}). ${message}`;
 
   const handleSendWhatsApp = () => {
     if (!name.trim() || !email.trim() || !message.trim()) return;
@@ -19,9 +19,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen text-foreground bg-black pt-21 pb-16 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
+    <div className="min-h-screen text-foreground bg-black pt-21 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
       <div className="w-full max-w-2xl">
-        <h1 className="text-4xl md:text-4xl md:leading-[1.3] font-bold tracking-tight mb-8 text-center">Vamos tomar um café e conversar sobre o seu projeto?</h1>
+        <h1 className="text-4xl md:text-4xl md:leading-[1.3] font-regular tracking-tight mb-8 text-center">
+          Tem uma ideia de projeto? Vamos conversar!</h1>
         {/* <p className="text-center text-[hsl(var(--muted-foreground))] mt-8 mb-12">
           Preencha os dados abaixo e conversaremos no WhatsApp.
         </p> */}

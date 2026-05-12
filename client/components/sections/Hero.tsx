@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
-  const words = ["Web", "Motion", "Brand", "UX/UI"];
+  const words = ["Web", "Motion", "Brand"];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -21,9 +21,9 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
       if (!isDeleting) {
         if (displayText.length < currentFullWord.length) {
           setDisplayText(currentFullWord.substring(0, displayText.length + 1));
-          setTypingSpeed(150);
+          setTypingSpeed(50);
         } else {
-          setTypingSpeed(2000);
+          setTypingSpeed(1000);
           setIsDeleting(true);
         }
       } else {
@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
         } else {
           setIsDeleting(false);
           setWordIndex((prev) => (prev + 1) % words.length);
-          setTypingSpeed(500);
+          setTypingSpeed(300);
         }
       }
     };
@@ -59,15 +59,18 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
       className="px-6 sm:px-8 md:px-8 lg:px-10 xl:px-40 gsap-section"
     >
       <div data-scroll-content className="w-full">
-        <h1 className="pt-32 md:pt-8 text-2xl md:text-5xl flex flex-wrap items-center justify-center gap-y-4 gap-x-4 text-center">
+        <h1 className="mt-32 md:pt-12 text-2xl md:text-5xl flex flex-wrap items-center justify-center gap-y-1 gap-x-2 text-center">
           <span className="whitespace-nowrap">Soluções de</span>
-          <span className="inline-flex items-center justify-center py-2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] w-[110px] md:w-[220px] text-center h-10 md:h-20">
+          <span className="inline-flex items-center justify-center bg-[hsl(var(--primary))] 
+          text-[hsl(var(--primary-foreground))] w-[110px] md:w-[220px] text-center h-8 md:h-16">
             <span className="relative">
               {displayText}
-              <span className="w-[1px] bg-current cursor-blink inline-block h-8 md:h-12 absolute -right-4 top-1/2 -translate-y-1/2"></span>
+              <span className="w-[1px] bg-current cursor-blink inline-block h-8 md:h-8 absolute -right-4 top-1/2 -translate-y-1/2"></span>
             </span>
           </span>
           <span className="">Design para negócios</span>
+          <p className="w-[800px] text-[0.8rem] uppercase tracking-[.2em] font-[200] mt-8 leading-5">
+            Do layout ao low-code acelerado por Inteligência Artificial</p>
         </h1>
         <HeroSlider projects={projects} />
       </div>

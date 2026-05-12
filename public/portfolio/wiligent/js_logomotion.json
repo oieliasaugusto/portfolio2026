@@ -1,0 +1,101 @@
+{
+  "Brilho": {
+    "version": "2.9.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {
+      "translateX": [],
+      "x": [
+        {
+          "id": "izmdIHoR7FdS",
+          "ms": 0,
+          "property": "x",
+          "value": 34.91,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "isExpression": false
+        },
+        {
+          "id": "a6ybu1WARx45",
+          "ms": 206,
+          "property": "x",
+          "value": 180,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "isExpression": false
+        }
+      ],
+      "opacity": [
+        {
+          "id": "sAv9EbSyvO8I",
+          "ms": 0,
+          "property": "opacity",
+          "value": 1,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "XAaQOY6NZamA",
+          "ms": 365,
+          "property": "opacity",
+          "value": 1,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "W": {
+    "version": "2.9.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {
+      "fillColor": []
+    }
+  },
+  "Mask group": {
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {
+      "x": []
+    }
+  },
+  "Subtract": {
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {}
+  },
+  "Vector": {
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {}
+  },
+  "iligent": {
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {}
+  },
+  "Elementos": {
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER",
+    "keyframes": {}
+  }
+}

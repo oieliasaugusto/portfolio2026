@@ -78,7 +78,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
       >
         <div className="flex py-12 md:py-16">
           {projects.map((project) => (
-            <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_35%] min-w-0 pr-8 pb-16 md:pr-12">
+            <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_35%] min-w-0 pr-4 md:pr-12">
               <Link
                 to={project.path}
                 className="group/card relative block glass-card rounded-[2.5rem] overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-8 hover:shadow-[0_45px_90px_-20px_rgba(65,53,222,0.35)] h-[400px] md:h-[400px] border border-white/5 select-none"
@@ -90,7 +90,8 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
                 />
 
                 {/* Darker Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-80 group-hover/card:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent 
+                opacity-80 group-hover/card:opacity-100 transition-opacity duration-700" />
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full z-10">
@@ -98,7 +99,8 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
                     {project.title}
                   </h3>
                   <div className="overflow-hidden">
-                    <p className="text-white/80 text-sm md:text-base font-light max-w-[340px] leading-relaxed transition-all duration-700 opacity-100 translate-y-0 md:opacity-0 md:group-hover/card:opacity-100 md:translate-y-6 md:group-hover/card:translate-y-0">
+                    <p className="text-white/80 text-sm md:text-base font-light max-w-[70%] leading-relaxed transition-all duration-700
+                    opacity-100 translate-y-0 md:opacity-0 md:group-hover/card:opacity-100 md:translate-y-6 md:group-hover/card:translate-y-0">
                       {project.description}
                     </p>
                   </div>

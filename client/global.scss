@@ -130,3 +130,33 @@ span {
 }
 
 /* Clean up old ID-based styles that are now handled by Tailwind classes */
+
+#viewProject {
+  p {
+    font-size: 1rem;
+  }
+
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    transform: opacity(0.5);
+  }
+}
+
+#projectImages {
+  img {
+    border-radius: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    padding-bottom: 5.5rem;
+  }
+}

@@ -26,49 +26,49 @@ export function useProjectAnimation() {
 
       // 2. Fade-in reveal for sections and images
       const revealElements = mainRef.current?.querySelectorAll("section > *, .glass-card, img");
-      
+
       revealElements?.forEach((el) => {
         // Skip if it's already animated by the initial reveal
         if (el.closest(".project-info-grid")) return;
 
-        gsap.fromTo(
-          el,
-          { 
-            opacity: 0, 
-            y: 50,
-            scale: 0.98,
-            filter: "blur(8px)"
-          },
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            filter: "blur(0px)",
-            duration: 1.2,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 92%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
+        // gsap.fromTo(
+        //   el,
+        //   {
+        //     opacity: 0,
+        //     y: 50,
+        //     // scale: 0.98,
+        //     // filter: "blur(8px)"
+        //   },
+        //   {
+        //     opacity: 1,
+        //     y: 0,
+        //     // scale: 1,
+        //     // filter: "blur(0px)",
+        //     duration: 0.5,
+        //     ease: "power3.out",
+        //     scrollTrigger: {
+        //       trigger: el,
+        //       start: "top 92%",
+        //       toggleActions: "play none none reverse",
+        //     },
+        //   }
+        // );
       });
 
       // 3. Subtle parallax/scale effect for large images
-      const images = mainRef.current?.querySelectorAll("section img");
-      images?.forEach((img) => {
-        gsap.to(img, {
-          y: -20,
-          ease: "none",
-          scrollTrigger: {
-            trigger: img,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          }
-        });
-      });
+      // const images = mainRef.current?.querySelectorAll("section img");
+      // images?.forEach((img) => {
+      //   gsap.to(img, {
+      //     y: -20,
+      //     ease: "none",
+      //     scrollTrigger: {
+      //       trigger: img,
+      //       start: "top bottom",
+      //       end: "bottom top",
+      //       scrub: true,
+      //     }
+      //   });
+      // });
 
     }, mainRef);
 

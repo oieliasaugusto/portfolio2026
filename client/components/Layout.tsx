@@ -44,14 +44,14 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   // Header will now stay permanently visible
 
   return (
-    <div className="min-h-screen text-foreground bg-black overflow-hidden selection:bg-[hsl(var(--primary))] selection:text-white">
+    <div className="min-h-screen text-foreground overflow-hidden selection:bg-[hsl(var(--primary))] selection:text-white">
       {/* Global Header */}
       <header className="w-full flex justify-center items-center mt-1 md:mt-2 z-50">
-        <div className="max-w-full md:max-w-[1200px] gap-24 px-8 py-6 flex justify-center items-center bg-black/40 backdrop-blur-md border-b border-white/5">
+        <div className="max-w-full md:max-w-[1200px] gap-16 md:gap-24 px-8 py-1 flex justify-center items-center">
           <div className="w-1/3 flex justify-start">
             <Link
               to="/sobre"
-              className="text-xs md:text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="w-16 text-xs md:text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Sobre
             </Link>
@@ -69,7 +69,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             </Link>
           </div>
 
-          <div className="w-1/3 flex justify-end">
+          <div className="w-16 w-1/3 flex justify-end">
             <Link
               to="/contato"
               className="text-xs md:text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
