@@ -1,6 +1,5 @@
-import { useLocation, Link } from "react-router-dom";
-import { useEffect } from "react";
-import { Rocket } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const NotFound = () => {
   const location = useLocation();
@@ -11,30 +10,44 @@ const NotFound = () => {
       location.pathname,
     );
   }, [location.pathname]);
+  const navigate = useNavigate();
+  const [counter, setCounter] = useState(5);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCounter(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          navigate('/');
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [navigate]);
   return (
     <div className="min-h-screen flex items-center justify-center bg-black text-white px-6">
       <div className="text-center max-w-md w-full">
         <div className="mb-8 relative flex justify-center">
-          <div className="animate-bounce">
-            <Rocket size={120} className="text-[hsl(var(--primary))] drop-shadow-[0_0_25px_rgba(65,53,222,0.8)]" />
+
+          <div className="NotFound w-80 h-80 mt-[-30%] mb-[-40%] overflow-hidden flex items-center justify-center">
+            <video autoPlay loop muted className="blend-screen"><source src="../../404.mp4" type="video/mp4" /></video>
           </div>
+
           {/* Subtle beam effect */}
           <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-32 h-64 bg-gradient-to-b from-[hsl(var(--primary)/0.3)] to-transparent blur-xl opacity-50" />
         </div>
-        
-        <h1 className="text-8xl font-bold mb-4 tracking-tighter opacity-20">404</h1>
-        <h2 className="text-3xl font-bold mb-4">Você se perdeu no espaço?</h2>
-        <p className="text-white/60 mb-8 leading-relaxed">
-          A página que você procura foi abduzida ou nunca existiu neste sistema.
+
+        <h1 className="text-[9rem] font-bold mb-4 tracking-tighter h-20 opacity-10">404</h1>
+        <h2 className="relative z-1 text-6xl font-bold mb-4">Oops!</h2>
+        <p className="text-white/60 my-8 leading-relaxed">
+          A página que você procura foi abduzida!
         </p>
-        
-        <Link 
-          to="/" 
-          className="inline-block px-10 py-4 bg-[hsl(var(--primary))] text-white rounded-full font-bold tracking-widest uppercase hover:scale-105 transition-all duration-300 shadow-lg shadow-[hsl(var(--primary)/0.3)]"
-        >
-          Voltar para a Terra
-        </Link>
+
+        <p className="pt-8 text-lg font-semibold">
+          Você será redirecionado em {counter}...
+        </p>
       </div>
     </div>
   );

@@ -20,15 +20,15 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen text-foreground bg-black pt-21 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
-      <div className="w-full max-w-2xl">
-        <h1 className="text-4xl md:text-4xl md:leading-[1.3] font-regular tracking-tight mb-8 text-center">
+      <div className="relative z-10 w-full max-w-2xl">
+        <h1 className="text-3xl md:text-4xl md:leading-[1.3] font-regular tracking-tight mb-8 text-center">
           Tem uma ideia de projeto? Vamos conversar!</h1>
         {/* <p className="text-center text-[hsl(var(--muted-foreground))] mt-8 mb-12">
           Preencha os dados abaixo e conversaremos no WhatsApp.
         </p> */}
 
-        <div className="glass-card rounded-lg flex flex-col transition-shadow w-full">
-          <div className="p-8 flex flex-col flex-grow justify-center gap-6">
+        <div className="relative z-10 glass-card rounded-lg flex flex-col transition-shadow w-full">
+          <div className="p-4 md:p-8 flex flex-col flex-grow justify-center gap-4 md:gap-6">
             {/* <h2 className="text-2xl lg:text-3xl text-[hsl(var(--foreground))] mb-2 leading-tight">Vamos tomar um café e conversar sobre o seu projeto?</h2> */}
 
             <input
@@ -55,14 +55,16 @@ export default function Contact() {
             <button
               onClick={handleSendWhatsApp}
               disabled={!name.trim() || !email.trim() || !message.trim()}
-              className="bg-[hsl(var(--primary))] w-full text-white text-xl font-medium py-4 rounded-xl flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed mt-2"
+              className="bg-[hsl(var(--primary))] w-full text-white text-xl font-medium py-4 rounded-xl flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Enviar
               <img src="/whatsapp.svg" alt="WhatsApp" className="w-6 h-6" />
             </button>
           </div>
         </div>
-        <video src="Cofee.mov" autoPlay loop muted className="position absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" />
+      </div>
+      <div className="absolute opacity-20 left-0 md:left-none right-[0%] md:right-[5%] Coffee w-[600px] flex items-center justify-center">
+        <video autoPlay loop muted className=""><source src="../../Coffee.mp4" type="video/mp4" /></video>
       </div>
     </div>
   );

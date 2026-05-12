@@ -90,8 +90,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
                 />
 
                 {/* Darker Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent 
-                opacity-80 group-hover/card:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-80 group-hover/card:opacity-100 transition-opacity duration-700" />
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full z-10">
