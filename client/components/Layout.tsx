@@ -51,7 +51,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <div className="w-8 w-1/3 flex justify-start">
             <Link
               to="/sobre"
-              className="text-[0.6rem] md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-[0.6rem] p-4 md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Sobre
             </Link>
@@ -72,7 +72,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <div className="w-8 w-1/3 flex justify-end">
             <Link
               to="/contato"
-              className="text-[0.6rem] md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-[0.6rem] p-4 md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Contato
             </Link>

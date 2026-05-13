@@ -51,8 +51,8 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
   return (
     <div className={cn("relative group/slider w-[100vw] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-1 md:mt-2", className)}>
       {/* Edge Fades */}
-      <div className="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-r from-black via-black/40 to-transparent z-30 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-l from-black via-black/40 to-transparent z-30 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-r  md:from-black via-black/40 to-transparent z-30 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-l md:from-black via-black/40 to-transparent z-30 pointer-events-none" />
 
       {/* Navigation Arrows (Desktop Only) */}
       <button
@@ -81,8 +81,11 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
             <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_35%] min-w-0 pr-4 md:pr-12">
               <Link
                 to={project.path}
-                className="group/card relative block glass-card rounded-[2.5rem] overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-8 hover:shadow-[0_45px_90px_-20px_rgba(65,53,222,0.35)] h-[400px] md:h-[400px] border border-white/5 select-none"
+                className="group/card relative block glass-card rounded-[2.5rem] overflow-hidden transition-all duration-700 
+                ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-8 hover:shadow-[0_45px_90px_-20px_rgba(65,53,222,0.35)] 
+                h-[400px] md:h-[400px] border border-white/5 select-none"
               >
+                {/* Image */}
                 <img
                   src={project.banner}
                   alt={project.title}
@@ -93,12 +96,12 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-80 group-hover/card:opacity-100 transition-opacity duration-700" />
 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full z-10">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-2 md:mb-0 tracking-tight transform transition-all duration-700 md:group-hover/card:-translate-y-3">
+                <div className="absolute bottom-0 left-0 p-4 md:p-8 w-full z-10">
+                  <h3 className="text-2xl md:text-4xl font-regular text-white mb-2 md:mb-0 tracking-tight transform transition-all duration-700 md:group-hover/card:-translate-y-3">
                     {project.title}
                   </h3>
                   <div className="overflow-hidden">
-                    <p className="text-white/80 text-sm md:text-base font-light max-w-[70%] leading-relaxed transition-all duration-700
+                    <p className="h-24 text-white/80 text-sm md:text-base font-light w-full leading-relaxed transition-all duration-700
                     opacity-100 translate-y-0 md:opacity-0 md:group-hover/card:opacity-100 md:translate-y-6 md:group-hover/card:translate-y-0">
                       {project.description}
                     </p>
