@@ -9,13 +9,13 @@ export default function KodieAcademy() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
         <h1 className="text-5xl md:text-6xl font-bold tracking-tight">KODIE <span className="text-[#ff5c35]">Academy</span></h1>
         <div>
-          <h3 className="text-xs tracking-widest uppercase font-light mb-2 text-[#ff5c35]">Desafio</h3>
+          <h3 className="text-2xl tracking-widest Manuscrita mb-2 text-[#ff5c35]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">
             Desenvolver uma campanha de lançamento da nova marca e comunicar o seu novo modelo de negócio ao mercado de educação e tecnologia latino-americano.
           </p>
         </div>
         <div>
-          <h3 className="text-xs tracking-widest uppercase font-light mb-2 text-[#ff5c35]">Resultado</h3>
+          <h3 className="text-2xl tracking-widest Manuscrita mb-2 text-[#ff5c35]">O Resultado</h3>
           <p className="text-white/70 leading-relaxed">
             Uma marca com autoridade, landing page de alta conversão e materiais visuais que comunicam juventude com solidez e confiança.
           </p>

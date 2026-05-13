@@ -15,10 +15,6 @@ const skills: Skill[] = [
 export default function About() {
   return (
     <div className="min-h-screen text-foreground bg-black pt-32 pb-16 px-6 md:px-10 lg:px-14 xl:px-40 flex flex-col items-center justify-center">
-      {/* <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4 text-center">Sobre mim</h1>
-      <p className="text-center text-[hsl(var(--muted-foreground))] mb-16 max-w-2xl">
-        Conheça mais sobre a minha trajetória e habilidades como designer digital.
-      </p> */}
 
       <div className="w-full max-w-[1000px] mt-[-52px] flex flex-col md:flex-row gap-8">
 
@@ -42,35 +38,13 @@ export default function About() {
               <p className="text-[hsl(var(--tertiary))] text-sm font-bold uppercase tracking-[0.2em] mb-4">
                 Designer digital</p>
               <p className="text-[hsl(var(--muted-foreground))] text-sm md:text-base font-light leading-relaxed mb-4">
-                Sou um profissional com habilidades multidisciplinares que se integram: experiente em interfaces digitais, motion, desenvolvimento low-code e redesign de marcas. Apaixonado por cinema, música boa, patinação e rpg de ação.
+                Um profissional com habilidades multidisciplinares que se integram permitindo a criação de ecossistemas digitais. Experiente com interfaces digitais funcionais e intuitivas (UI/UX), além de desenvolvimento low-code acelerado por IA.
+                <br /><br />
+                Também trabalho com motion e identidade visual. Em tempo livre, sou apaixonado por experiências cinematográficas imersivas, muitos estilos de música, patinação, rpg de ação e açaí com paçoca – sempre!
               </p>
             </div>
           </div>
         </div>
-
-        {/* Skills Panel */}
-        {/* <div className="flex-1 flex flex-col">
-          <div className="glass-card rounded-lg flex flex-col w-full p-8 transition-shadow h-full justify-center">
-            <h3 className="text-2xl font-bold text-[hsl(var(--foreground))] mb-8">Habilidades Profissionais</h3>
-            
-            <div className="flex flex-col gap-6">
-              {skills.map((skill, index) => (
-                <div key={index} className="flex flex-col gap-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-medium text-white/90">{skill.name}</span>
-                    <span className="text-sm font-light text-[hsl(var(--primary))]">{skill.percentage}%</span>
-                  </div>
-                  <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-[hsl(var(--primary))] rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.percentage}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
 
       </div>
     </div>

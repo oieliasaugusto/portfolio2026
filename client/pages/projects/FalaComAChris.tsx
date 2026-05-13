@@ -10,13 +10,13 @@ export default function FalaComAChris() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
         <h1 className="text-5xl md:text-6xl font-bold tracking-tight">App Fala <br />com <span className="text-[#3b82f6]">a Chris</span></h1>
         <div>
-          <h3 className="text-xs tracking-widest uppercase  mb-2 font-light text-[#3b82f6]">Desafio</h3>
+          <h3 className="text-2xl tracking-widest Manuscrita mb-2 text-[#3b82f6]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">
             Criar uma plataforma MVP que conecte contratantes e profissionais qualificados na região de Grande Lisboa, focada em agilidade e confiança.
           </p>
         </div>
         <div>
-          <h3 className="text-xs tracking-widest uppercase  mb-2 font-light text-[#3b82f6]">Resultado</h3>
+          <h3 className="text-2xl tracking-widest Manuscrita mb-2 text-[#3b82f6]">O Resultado</h3>
           <p className="text-white/70 leading-relaxed">
             Um aplicativo com interfaces intuitivas, com fluxo de usuário otimizado, com identidade visual competitiva e landing page de captação de leads.
           </p>

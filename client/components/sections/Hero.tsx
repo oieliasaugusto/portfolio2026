@@ -59,17 +59,17 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
       className="px-6 sm:px-8 md:px-8 lg:px-10 xl:px-40 gsap-section"
     >
       <div data-scroll-content className="w-full">
-        <h1 className="mt-32 md:pt-12 text-2xl md:text-5xl flex flex-wrap items-center justify-center gap-y-1 gap-x-2 text-center">
+        <h1 className="mt-28 md:pt-12 text-2xl md:text-5xl flex flex-wrap items-center justify-center gap-y-1 gap-x-2 text-center">
           <span className="whitespace-nowrap">Soluções de</span>
           <span className="inline-flex items-center justify-center bg-[hsl(var(--primary))] 
-          text-[hsl(var(--primary-foreground))] w-[110px] md:w-[220px] text-center h-8 md:h-16">
-            <span className="relative">
+          text-[hsl(var(--primary-foreground))] w-[90px] md:w-[180px] mx-2 text-center h-8 md:h-12">
+            <span className="text-4xl md:text-7xl relative Manuscrita">
               {displayText}
-              <span className="w-[1px] bg-current cursor-blink inline-block h-8 md:h-8 absolute -right-4 top-1/2 -translate-y-1/2"></span>
+              <span className="w-[1px] bg-current cursor-blink inline-block h-8 md:h-12 absolute -right-2 top-1/2 -translate-y-1/2"></span>
             </span>
           </span>
           <span className="">Design para negócios</span>
-          <p className="w-[800px] text-[0.8rem] uppercase tracking-[.2em] font-[200] mt-8 leading-5">
+          <p className="Manuscrita w-[300px] md:w-full text-xl md:text-2xl tracking-widest text-gray-300 font-[200] mt-4 leading-7">
             Do layout ao low-code acelerado por Inteligência Artificial</p>
         </h1>
         <HeroSlider projects={projects} />

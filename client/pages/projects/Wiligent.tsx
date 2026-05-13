@@ -11,11 +11,11 @@ export default function Wiligent() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
         <h1 className="text-5xl md:text-6xl font-bold tracking-tight">Wiligent <span className="text-[#35de8a]">Miami</span></h1>
         <div>
-          <h3 className="text-xs tracking-widest uppercase font-light mb-2 text-[#35de8a]">Desafio</h3>
+          <h3 className="text-2xl tracking-widest Manuscrita mb-2 text-[#35de8a]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">Fazer o rebranding completo de um novo negócio em Miami.</p>
         </div>
         <div>
-          <h3 className="text-xs tracking-widest uppercase font-light mb-2 text-[#35de8a]">Resultado</h3>
+          <h3 className="text-2xl tracking-widest Manuscrita mb-2 text-[#35de8a]">O Resultado</h3>
           <p className="text-white/70 leading-relaxed">Uma nova marca e identidade visual, landing page personalizada com foco em conversão.
             <br /><span className="text-[#35de8a] font-light tracking-wider">+1.800 </span>acessos em 2 semanas.
           </p>
