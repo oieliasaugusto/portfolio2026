@@ -12,7 +12,7 @@ export function Logo() {
       {/* First row */}
       <rect x="13" y="0" width="13" height="13" fill="#4641D9" />
       <rect x="27" y="0" width="13" height="13" fill="#4641D9" />
-      <rect x="40" y="0" width="13" height="13" fill="#4641D9" />
+      <rect x="40" y="0" width="13" height="13" fill="#0b0a26ff" />
       <rect x="54" y="0" width="13" height="13" fill="#4641D9" />
       <rect x="67" y="0" width="13" height="13" fill="#4641D9" />
       <rect x="81" y="0" width="13" height="13" fill="#4641D9" />
