@@ -14,9 +14,9 @@ interface OtherProjectsProps {
 
 export default function OtherProjects({ currentId }: OtherProjectsProps) {
   return (
-    <section id="otherProjects" className="py-4 border-t border-white/10 mt-24">
+    <section id="otherProjects" className="border-t border-white/10 pt-12">
       <div className="flex items-center justify-between mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold">Outros Projetos</h2>
+        <h2 className="text-3xl md:text-4xl font-regular">Outros Projetos</h2>
       </div>
 
       <Carousel
@@ -48,7 +48,7 @@ export default function OtherProjects({ currentId }: OtherProjectsProps) {
                   />
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-white/60">{project.description.slice(0, 60)}...</p>
                 </div>
               </Link>

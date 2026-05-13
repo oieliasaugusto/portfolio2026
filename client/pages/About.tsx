@@ -21,8 +21,8 @@ export default function About() {
         {/* Profile Card */}
         <div className="flex-1">
           <div id="card_EliasAugusto" className="glass-card mx-auto rounded-lg flex flex-col w-[100%] md:w-[65%] p-6 transition-shadow relative h-full">
-            <div className="absolute left-[20%] md:left-[60%] top-0 mt-[-20%]"><BadgeGiratorio /></div>
-            <div className="bg-white h-[220px] md:h-[300px] rounded-lg">
+            <div className="absolute left-[24%] md:left-[60%] top-0 mt-[-20%]"><BadgeGiratorio /></div>
+            <div className="bg-white h-[226px] md:h-[300px] rounded-lg">
               <img src="/Eli_profile.png" alt="Homem pardo, de óculos redondos e cabelos cacheados, olhando para a câmera"
                 className="h-[300px] md:h-[375px] left-4 md:left-32 top-[-50px] absolute" /></div>
             <div className="pt-8 flex flex-col flex-grow">
@@ -40,7 +40,7 @@ export default function About() {
               <p className="text-[hsl(var(--muted-foreground))] text-sm md:text-base font-light leading-relaxed mb-4">
                 Um profissional com habilidades multidisciplinares que se integram permitindo a criação de ecossistemas digitais. Experiente com interfaces digitais funcionais e intuitivas (UI/UX), além de desenvolvimento low-code acelerado por IA.
                 <br /><br />
-                Também trabalho com motion e identidade visual. Em tempo livre, sou apaixonado por experiências cinematográficas imersivas, muitos estilos de música, patinação, rpg de ação e açaí com paçoca – sempre!
+                Também trabalho com motion e identidade visual. Em tempo livre, sou apaixonado por experiências cinematográficas imersivas, muitos estilos de música, patinação, rpg de ação e açaí – com paçoca, sempre!
               </p>
             </div>
           </div>

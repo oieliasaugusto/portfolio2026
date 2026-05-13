@@ -8,18 +8,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "fala-com-a-chris",
-    title: "Fala com a Chris",
-    description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
-    banner: "/portfolio/ptchris/Capa.jpg",
-    path: "/projetos/fala-com-a-chris",
-  },
-  {
     id: "kodie-academy",
     title: "KODIE Academy",
     description: "Campanha de lançamento de marca ao mercado de educação e tecnologia latino-americano.",
     banner: "/portfolio/kodie/KODIE.jpg",
     path: "/projetos/kodie-academy",
+  },
+  {
+    id: "fala-com-a-chris",
+    title: "Fala com a Chris",
+    description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
+    banner: "/portfolio/ptchris/Capa.jpg",
+    path: "/projetos/fala-com-a-chris",
   },
   {
     id: "wiligent",

@@ -47,7 +47,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     <div className="min-h-screen text-foreground overflow-hidden selection:bg-[hsl(var(--primary))] selection:text-white">
       {/* Global Header */}
       <header className="w-full flex justify-center items-center mt-1 md:mt-2 relative z-40">
-        <div className="max-w-full md:max-w-[1200px] gap-20 md:gap-24 px-8 py-1 flex justify-center items-center">
+        <div className="max-w-full md:max-w-[1200px] gap-20 md:gap-24 flex justify-center items-center">
           <div className="w-8 w-1/3 flex justify-start">
             <Link
               to="/sobre"

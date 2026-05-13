@@ -19,13 +19,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen text-foreground bg-black pt-21 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
-      <div className="relative z-10 w-full max-w-2xl">
-        <h1 className="text-3xl md:text-4xl md:leading-[1.3] font-regular tracking-tight mb-4 text-center">
-          Tem uma ideia de projeto? Vamos conversar</h1>
+    <div className="min-h-screen text-foreground bg-black px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
+      <div className="relative z-10 w-full md:max-w-2xl">
+        <h1 className="text-4xl md:leading-[1.3] font-regular tracking-tight mb-4 text-center">
+          Contato</h1>
         <p className="text-center text-[hsl(var(--muted-foreground))]/60 mb-8">
-          Preencha os dados abaixo e conversaremos no WhatsApp
-        </p>
+          Preencha os dados abaixo para conversar diretamente no WhatsApp</p>
 
         <div className="relative z-10 glass-card rounded-lg flex flex-col transition-shadow w-full">
           <div className="p-4 md:p-8 flex flex-col flex-grow justify-center gap-4">
@@ -51,7 +50,7 @@ export default function Contact() {
               id="mensagem-usuario"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Sua mensagem"
+              placeholder="Como posso ajudar você a alcançar os seus objetivos de negócio?"
               className="w-full bg-white/5 border border-white/10 text-[hsl(var(--foreground))] placeholder-[hsl(var(--foreground))]/40 
               px-4 py-2 h-[120px] rounded-md text-md font-light focus:outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] flex-grow resize-none transition-all"
             />
@@ -69,8 +68,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/* <div className="absolute opacity-20 md:opacity-80 left-0 md:left-[80%] md:left-none Coffee w-[600px] flex items-center justify-center">
-        <video autoPlay loop muted className="pointer-events-none"><source src="../../Coffee.mp4" type="video/mp4" /></video>
+      {/* <div className="pointer-events-none absolute opacity-20 md:opacity-80 left-0 md:left-[80%] md:left-none Coffee w-[600px] flex items-center justify-center">
+        <video autoPlay playsInline webkit-playsinline="true" disablePictureInPicture loop muted className="pointer-events-none"><source src="../../Coffee.mp4" type="video/mp4" /></video>
       </div> */}
     </div>
   );
