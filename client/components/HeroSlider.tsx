@@ -57,14 +57,16 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
       {/* Navigation Arrows (Desktop Only) */}
       <button
         onClick={scrollPrev}
-        className="hidden md:flex absolute left-8 lg:left-12 top-1/2 -translate-y-1/2 w-16 h-16 items-center justify-center rounded-full bg-black/20 hover:bg-black/50 border border-white/10 text-white z-40 transition-all hover:scale-110 backdrop-blur-sm"
+        className="hidden md:flex absolute left-8 lg:left-12 top-1/2 -translate-y-1/2 w-16 h-16 items-center justify-center 
+        rounded-full bg-black/20 hover:bg-black/50 border border-white/10 text-white z-40 transition-all hover:scale-1 backdrop-blur-sm"
         aria-label="Projeto anterior"
       >
         <ChevronLeft className="w-8 h-8" />
       </button>
       <button
         onClick={scrollNext}
-        className="hidden md:flex absolute right-8 lg:right-12 top-1/2 -translate-y-1/2 w-16 h-16 items-center justify-center rounded-full bg-black/20 hover:bg-black/50 border border-white/10 text-white z-40 transition-all hover:scale-110 backdrop-blur-sm"
+        className="hidden md:flex absolute right-8 lg:right-12 top-1/2 -translate-y-1/2 w-16 h-16 items-center justify-center 
+        rounded-full bg-black/20 hover:bg-black/50 border border-white/10 text-white z-40 transition-all hover:scale-1 backdrop-blur-sm"
         aria-label="Próximo projeto"
       >
         <ChevronRight className="w-8 h-8" />
@@ -89,7 +91,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
                 <img
                   src={project.banner}
                   alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover/card:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover/card:scale-1"
                 />
 
                 {/* Darker Gradient Overlay */}

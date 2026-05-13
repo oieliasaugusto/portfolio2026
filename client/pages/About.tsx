@@ -42,7 +42,7 @@ export default function About() {
               <p className="text-[hsl(var(--tertiary))] text-sm font-bold uppercase tracking-[0.2em] mb-4">
                 Designer digital</p>
               <p className="text-[hsl(var(--muted-foreground))] text-sm md:text-base font-light leading-relaxed mb-4">
-                Sou um profissional com habilidades multidisciplinares que se integram: experiente em interfaces digitais, motion, desenvolvimento low-code e redesign de marcas. Apaixonado por cinema, música boa, patinação e RPG de ação.
+                Sou um profissional com habilidades multidisciplinares que se integram: experiente em interfaces digitais, motion, desenvolvimento low-code e redesign de marcas. Apaixonado por cinema, música boa, patinação e rpg de ação.
               </p>
             </div>
           </div>
