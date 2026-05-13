@@ -70,7 +70,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="absolute opacity-20 md:opacity-80 left-0 md:left-[80%] md:left-none Coffee w-[600px] flex items-center justify-center">
-        <video autoPlay loop muted className=""><source src="../../Coffee.mp4" type="video/mp4" /></video>
+        <video autoPlay loop muted className="pointer-events-none"><source src="../../Coffee.mp4" type="video/mp4" /></video>
       </div>
     </div>
   );
