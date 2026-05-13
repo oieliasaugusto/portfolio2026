@@ -11,7 +11,7 @@ export const projects: Project[] = [
     id: "fala-com-a-chris",
     title: "Fala com a Chris",
     description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
-    banner: "/portfolio/ptchris/ChrisPortugal.jpg",
+    banner: "/portfolio/ptchris/Capa.jpg",
     path: "/projetos/fala-com-a-chris",
   },
   {
