@@ -28,6 +28,13 @@ export const projects: Project[] = [
     banner: "/portfolio/wiligent/WiligentMiami.jpg",
     path: "/projetos/wiligent",
   },
+  {
+    id: "reel",
+    title: "Motion Reel",
+    description: "Showcase de projetos de motion design, animação 2D e storytelling visual (2021-2024).",
+    banner: "/portfolio/reel/Loop.gif",
+    path: "/projetos/reel",
+  },
   // {
   //   id: "invites",
   //   title: "Convites",

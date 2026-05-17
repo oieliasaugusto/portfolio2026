@@ -17,6 +17,7 @@ import Toca from "./pages/projects/Toca";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Mobiplus from "./pages/projects/Mobiplus";
+import Reel from "./pages/projects/Reel";
 import { Layout } from "@/components/Layout";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/projetos/reel" element={<Reel />} />
             <Route path="/projetos/kodie-academy" element={<KodieAcademy />} />
             <Route path="/projetos/fala-com-a-chris" element={<FalaComAChris />} />
             <Route path="/projetos/wiligent" element={<Wiligent />} />
