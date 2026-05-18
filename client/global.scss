@@ -145,8 +145,13 @@ span {
 }
 
 #projectImages {
+  .BoxImages {
+    gap: 3rem;
+  }
+
   img {
     border-radius: 1rem;
+    object-fit: contain;
   }
 
   h4 {
@@ -154,10 +159,6 @@ span {
     font-weight: 400;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-  }
-
-  p {
-    padding-bottom: 5.5rem;
   }
 }
 
@@ -167,8 +168,4 @@ span {
 
 .NotFound video {
   mix-blend-mode: screen;
-}
-
-.Manuscrita {
-  font-family: "Annie Use Your Telescope", system-ui;
 }

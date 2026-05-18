@@ -62,14 +62,14 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
         <h1 className="mt-28 md:pt-12 text-2xl md:text-5xl flex flex-wrap items-center justify-center gap-y-1 gap-x-2 text-center">
           <span className="whitespace-nowrap">Soluções de</span>
           <span className="inline-flex items-center justify-center bg-[hsl(var(--primary))] 
-          text-[hsl(var(--primary-foreground))] w-[90px] md:w-[180px] mx-2 text-center h-8 md:h-12">
-            <span className="text-4xl md:text-7xl relative Manuscrita">
+          text-[hsl(var(--primary-foreground))] w-[120px] md:w-[220px] mx-2 text-center h-8 md:h-12">
+            <span className=" relative">
               {displayText}
               <span className="w-[1px] bg-current cursor-blink inline-block h-8 md:h-12 absolute -right-2 top-1/2 -translate-y-1/2"></span>
             </span>
           </span>
           <span className="">Design para negócios</span>
-          <p className="Manuscrita w-[300px] md:w-full text-xl md:text-2xl tracking-widest text-gray-300 font-[200] mt-4 leading-7">
+          <p className="w-[300px] md:w-full text-xl tracking-widest text-gray-300 font-[200] mt-4 leading-7">
             Do layout ao low-code acelerado por Inteligência Artificial</p>
         </h1>
         <HeroSlider projects={projects} />

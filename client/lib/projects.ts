@@ -15,13 +15,6 @@ export const projects: Project[] = [
     path: "/projetos/kodie-academy",
   },
   {
-    id: "fala-com-a-chris",
-    title: "Fala com a Chris",
-    description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
-    banner: "/portfolio/ptchris/Capa.jpg",
-    path: "/projetos/fala-com-a-chris",
-  },
-  {
     id: "wiligent",
     title: "Wiligent",
     description: "Redesign de identidade visual, design de Landing page e E-book, com foco em conversão.",
@@ -29,12 +22,19 @@ export const projects: Project[] = [
     path: "/projetos/wiligent",
   },
   {
-    id: "reel",
-    title: "Motion Reel",
-    description: "Showcase de projetos de motion design, animação 2D e storytelling visual (2021-2024).",
-    banner: "/portfolio/reel/Loop.gif",
-    path: "/projetos/reel",
+    id: "fala-com-a-chris",
+    title: "Fala com a Chris",
+    description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
+    banner: "/portfolio/ptchris/Capa.jpg",
+    path: "/projetos/fala-com-a-chris",
   },
+  // {
+  //   id: "reel",
+  //   title: "Motion Reel",
+  //   description: "Showcase de projetos de motion design, animação 2D e storytelling visual (2021-2024).",
+  //   banner: "/portfolio/reel/Loop.gif",
+  //   path: "/projetos/reel",
+  // },
 
 
 
