@@ -6,18 +6,12 @@ export default function Reel() {
 
     return (
         <main ref={mainRef} id="viewProject" className="px-6 md:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-12 project-info-grid">
                 <h1 className="text-5xl md:text-6xl font-bold tracking-tight">Motion <span className="text-[#ff5c35]">Reel</span></h1>
                 <div>
                     <h3 className="text-2xl tracking-widest Manuscrita text-[#ff5c35]">O Portfólio</h3>
-                    <p className="text-white/70 leading-relaxed">
-                        Uma compilação de trabalhos de motion design, animação 2D e storytelling visual, desenvolvidos para diversas marcas (2021-2024).
-                    </p>
-                </div>
-                <div>
-                    <h3 className="text-2xl tracking-widest Manuscrita text-[#ff5c35]">Expertise</h3>
-                    <p className="text-white/70 leading-relaxed">
-                        Especializado em dar vida a identidades visuais, criar narrativas dinâmicas e explicar conceitos complexos através do movimento.
+                    <p className="text-white/70 leading-relaxed max-w-[700px]">
+                        Uma compilação de trabalhos de motion design, animação 2D e storytelling visual, desenvolvidos para marcas e estudos pessoais. (2021-2024).
                     </p>
                 </div>
             </div>
@@ -25,7 +19,7 @@ export default function Reel() {
             <section id="projectImages" className="project-images mt-12">
                 <div className="overflow-hidden text-center flex flex-col items-center gap-16">
 
-                    <div className="w-full md:w-[60%]">
+                    <div className="w-full lg:w-[60%]">
                         <video
                             src="/portfolio/reel/2024DEMOREEL.mp4"
                             controls
@@ -36,7 +30,7 @@ export default function Reel() {
                         <p className="max-w-[700px] mx-auto text-white/60">Uma jornada visual com momentos de animação e design de 2023-2024.</p>
                     </div>
 
-                    <div className="w-full md:w-[60%] grid grid-cols-1">
+                    <div className="w-full lg:w-[60%] grid grid-cols-1">
                         <div className="flex flex-col items-center group gap-4">
                             <h4 className="mt-6 text-xl">VnW Animation</h4>
                             <div className="w-full overflow-hidden rounded-2xl border border-white/5 transition-all duration-500 group-hover:border-white/20">
