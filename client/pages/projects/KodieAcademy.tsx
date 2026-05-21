@@ -37,17 +37,16 @@ export default function KodieAcademy() {
             <p className="max-w-[500px]">Talentos preparados para o mercado de trabalho, prontos para entregar soluções de tecnologia de alto nível e impacto.</p>
           </div>
 
-          <div className="w-full aspect-video relative my-8">
+          <div className="aspect-video relative my-8 w-full max-w-[1150px]">
             <iframe
               src="https://player.vimeo.com/video/1194209665?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               frameBorder={0}
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              className="absolute top-0 left-0 w-full h-full max-w-[1150px]"
+              className="w-full h-full"
               title="KODIE Manifesto">
             </iframe>
           </div>
-
 
           <img src="/portfolio/kodie/YT_Banner.png" alt="YouTube" className="w-full h-auto" />
 
