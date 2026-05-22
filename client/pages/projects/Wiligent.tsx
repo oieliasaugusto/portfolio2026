@@ -26,27 +26,28 @@ export default function Wiligent() {
         <div className="flex flex-col justify-center items-center overflow-hidden shadow-2xl">
           <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 py-12 md:p-32 lg:p-52 w-full h-auto !rounded-none md:!rounded-3xl" />
           
-          <div className="flex flex-col lg:flex-row align-between w-full justify-between pt-14">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-12 gap-8">
             
-            <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-4">
-              <div className="flex flex-col md:flex-row w-full justify-center items-center gap-4">
-                <div className="flex justify-center w-full bg-[#01152C] items-center border border-white/40 rounded-2xl h-[160px] md:h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
-                  <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto h-[320px]" />
+            <div className="flex flex-col   w-full justify-center items-center gap-4">
+              <div className="flex flex-col  w-full justify-center items-center gap-4">
+                <div className="flex justify-center w-full bg-[#01152C] items-center border border-white/40 rounded-2xl h-[70px] lg:h-[200px] lg:w-[500px] overflow-hidden inline-block">
+                  <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto md:h-[320px]" />
                 </div>
 
-                <div className="flex justify-center w-full bg-[#061f3e] px-12 items-center border border-white/40 rounded-2xl h-[180px] md:h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
+                <div className="flex justify-center w-full bg-[#061f3e] px-12 items-center border border-white/40 rounded-2xl h-[50px] lg:h-[200px] w-[200px] lg:w-[500px] overflow-hidden inline-block">
                   <video src="/portfolio/wiligent/Loading1.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto" />
                 </div>
               </div>
-
-              <div className="flex flex-col p-8 gap-0 md:gap-4 rounded-xl">
-                <p className="text-gray-400 !pb-0 text-left mr-4 !text-[0.9rem]">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
-                <img src="/portfolio/wiligent/Logo_Destails.svg" alt="" className="object-cover w-auto h-[200px]" />
-                <p className="text-gray-400 !pb-0 !text-[0.9rem]">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
-              </div>
-              <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full lg:w-[480px] md:w-[380px]" />
             </div>
-          
+
+            <div className="flex flex-col md:flex-row w-full justify-center items-center md:gap-4">
+            <div className="w-full flex flex-col md:p-8 md:gap-4">
+              <p className="text-gray-400 !pb-0 text-left md:mr-4 !text-[0.9rem]">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
+              <img src="/portfolio/wiligent/Logo_Destails.svg" alt="" className="object-cover w-auto md:h-[200px]" />
+              <p className="text-green-400 !pt-0 !text-[0.9rem]">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
+            </div>
+            </div>
+                        {/* <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full lg:w-[480px] md:w-[380px]" /> */}
           </div>
 
           <img src="/portfolio/wiligent/Wiligent_LP.png" alt="Landing Page Wiligent" className="mt-14 w-full h-auto object-top" />
