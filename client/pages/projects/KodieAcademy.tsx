@@ -11,14 +11,12 @@ export default function KodieAcademy() {
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">
-            Desenvolver uma campanha de lançamento da nova marca e comunicar o seu novo modelo de negócio ao mercado de educação e tecnologia latino-americano.
-          </p>
+Desenvolver uma campanha de lançamento da nova marca ecomunicar o seu novo modelo de negócio ao mercado de educaçãoe tecnologia latino-americano.          </p>
         </div>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Resultado</h3>
           <p className="text-white/70 leading-relaxed">
-            Uma marca que se comunica com autoridade, landing page convertendo e materiais visuais que comunicam juventude com solidez e confiança.
-          </p>
+Uma marca que se comunica com autoridade, landing pageconvertendo e materiais visuais que comunicam juventudecom solidez e confiança.          </p>
         </div>
       </div>
 
@@ -57,10 +55,10 @@ export default function KodieAcademy() {
             <img src="/portfolio/kodie/Costas_Blusa.jpg" alt="Blusa KODIE" className="mx-auto object-cover" />
           </div>
 
-          <img src="/portfolio/kodie/OnePage_KODIE.png" alt="One page" className="w-full h-auto" />
-
           {/* Landing page ---nao trazer versao mobile */}
           <img src="/portfolio/kodie/LP_KODIE.jpg" alt="KODIE website" className="w-full h-auto" />
+
+          <img src="/portfolio/kodie/OnePage_KODIE.png" alt="One page" className="w-full h-auto" />
 
           {/* LIVE de Lançamento */}
           {/* <h4 className="mt-14">LIVE de Lançamento</h4>
