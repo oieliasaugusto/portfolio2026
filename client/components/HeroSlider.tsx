@@ -81,6 +81,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
       >
         <div className="flex py-8 md:pt-16">
           {projects.map((project) => (
+            // ########################################### ALTERAR A LARGURA DOS CARDS AQUI ###########################################
             <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_35%] min-w-0 pr-4 md:pr-8">
               <Link
                 to={project.path}

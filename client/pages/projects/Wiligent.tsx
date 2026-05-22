@@ -24,7 +24,7 @@ export default function Wiligent() {
 
       <section id="projectImages" className="project-images mt-12 text-center">
         <div className="flex flex-col justify-center items-center overflow-hidden shadow-2xl">
-          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 lg:p-24 w-full h-auto" />
+          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 lg:p-52 w-full h-auto" />
           
           <div className="flex flex-col lg:flex-row align-between w-full justify-between pt-14">
             
