@@ -39,31 +39,31 @@ export default function FalaComAChris() {
             <img src="/portfolio/ptchris/AppStore.jpg" alt="" className="w-[80%] h-auto" /> */}
           </div>
 
-          <div className="bg-[#2170CC] p-8 w-full grid grid-cols-1">
+          <div className="bg-[#2170CC] rounded-3xl p-8 w-full grid grid-cols-1">
             <div className="flex flex-col md:flex-row items-center pb-12 p-0 md:p-4 gap-4 md:gap-0 md:p-8">
-              <img src="/portfolio/ptchris/Screen1.png" alt="KODIE Academy" className="h-auto !rounded-3xl max-h-auto md:max-h-[650px] object-contain shadow-xl z-index-10" />
-                            <img src="/portfolio/ptchris/1Cadastro.svg" alt="KODIE Academy" 
-                            className="bg-white md:!rounded-none px-1 md:px-24 py-4 w-full h-auto max-h-auto md:max-h-[590px] object-contain z-index-10" />
-              <img src="/portfolio/ptchris/Screen2.png" alt="KODIE Academy" className="h-auto !rounded-3xl max-h-auto md:max-h-[650px] object-contain shadow-xl z-index-10" />
+              <img src="/portfolio/ptchris/Screen1.png" alt="" className="h-auto !rounded-3xl max-h-auto md:max-h-[650px] object-contain shadow-xl z-index-10" />
+              <img src="/portfolio/ptchris/1Cadastro.svg" alt="" 
+              className="bg-white md:!rounded-none px-1 md:px-24 py-4 w-full h-auto max-h-auto md:max-h-[590px] object-contain z-index-10" />
+              <img src="/portfolio/ptchris/Screen2.png" alt="" className="h-auto !rounded-3xl max-h-auto md:max-h-[650px] object-contain shadow-xl z-index-10" />
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-y-8 rounded-3xl bg-[#2170CC] pb-12 md:p-8">
-              <img src="/portfolio/ptchris/Screen3.png" alt="KODIE Academy" className="h-auto max-h-auto !rounded-3xl md:max-h-[650px] object-contain shadow-xl" />
-              <img src="/portfolio/ptchris/2Contratacao.svg" alt="KODIE Academy" className="bg-white p-24 w-full !rounded-none h-auto max-h-auto md:max-h-[580px] object-contain" />
-              <img src="/portfolio/ptchris/Screen3.png" alt="KODIE Academy" className="h-auto max-h-auto !rounded-3xl md:max-h-[650px] object-contain shadow-xl" />
+              <img src="/portfolio/ptchris/Screen3.png" alt="" className="h-auto max-h-auto !rounded-3xl md:max-h-[650px] object-contain shadow-xl" />
+              <img src="/portfolio/ptchris/2Contratacao.svg" alt="" className="bg-white p-24 w-full !rounded-none h-auto max-h-auto md:max-h-[580px] object-contain" />
+              <img src="/portfolio/ptchris/Screen3.png" alt="" className="h-auto max-h-auto !rounded-3xl md:max-h-[650px] object-contain shadow-xl" />
 
             </div>
 
             <div className="flex flex-col md:flex-row gap-4 rounded-3xl bg-[#2170CC] pb-12 md:p-8">
-              <img src="/portfolio/ptchris/Resumo.png" alt="KODIE Academy" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
-              <img src="/portfolio/ptchris/Screen4.png" alt="KODIE Academy" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
-              <img src="/portfolio/ptchris/Screen5.png" alt="KODIE Academy" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
-              <img src="/portfolio/ptchris/Screen6.png" alt="KODIE Academy" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
+              <img src="/portfolio/ptchris/Resumo.png" alt="" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
+              <img src="/portfolio/ptchris/Screen4.png" alt="" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
+              <img src="/portfolio/ptchris/Screen5.png" alt="" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
+              <img src="/portfolio/ptchris/Screen6.png" alt="" className="w-full h-auto max-h-auto md:max-h-[650px] object-contain" />
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center w-full gap-y-4 md:p-8">
-              <img src="/portfolio/ptchris/3Atendimento.svg" alt="KODIE Academy" className="md:block hidden bg-white p-2 md:p-24 w-full h-auto max-h-auto md:max-h-[500px] object-contain" />
-              <img src="/portfolio/ptchris/Screen7.png" alt="KODIE Academy" 
+              <img src="/portfolio/ptchris/3Atendimento.svg" alt="" className="md:block hidden bg-white p-2 md:p-24 w-full h-auto max-h-auto md:max-h-[500px] object-contain" />
+              <img src="/portfolio/ptchris/Screen7.png" alt="" 
               className="md:relative top-0 right-20 h-auto max-h-auto md:max-h-[650px] object-contain shadow-xl" />
             </div>
 
