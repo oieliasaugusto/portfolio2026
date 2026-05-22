@@ -6,7 +6,7 @@ export default function KodieAcademy() {
 
   return (
     <main ref={mainRef} id="viewProject" className="px-6 lg:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-12 project-info-grid">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
         <h1 className="text-5xl lg:text-6xl font-bold tracking-tight">KODIE <span className="text-[#ff5c35]">Academy</span></h1>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Desafio</h3>

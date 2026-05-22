@@ -8,7 +8,7 @@ export default function Wiligent() {
 
   return (
     <main ref={mainRef} id="viewProject" className="px-6 lg:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-12 project-info-grid">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
         <h1 className="text-5xl lg:text-6xl font-bold tracking-tight">Wiligent <span className="text-[#35de8a]">Miami</span></h1>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#35de8a]">O Desafio</h3>
@@ -24,14 +24,21 @@ export default function Wiligent() {
 
       <section id="projectImages" className="project-images mt-12 text-center">
         <div className="flex flex-col justify-center items-center overflow-hidden shadow-2xl">
-          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 !py-12 md:p-14 lg:p-52 w-full h-auto !rounded-none md:!rounded-3xl" />
+          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 py-12 md:p-32 lg:p-52 w-full h-auto !rounded-none md:!rounded-3xl" />
           
           <div className="flex flex-col lg:flex-row align-between w-full justify-between pt-14">
             
             <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-4">
-              <div className="flex justify-center w-full bg-[#01152C] items-center border border-white/40 rounded-2xl h-[160px] md:h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
-                <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto h-[320px]" />
+              <div className="flex flex-col md:flex-row w-full justify-center items-center gap-4">
+                <div className="flex justify-center w-full bg-[#01152C] items-center border border-white/40 rounded-2xl h-[160px] md:h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
+                  <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto h-[320px]" />
+                </div>
+
+                <div className="flex justify-center w-full bg-[#061f3e] px-12 items-center border border-white/40 rounded-2xl h-[180px] md:h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
+                  <video src="/portfolio/wiligent/Loading1.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto" />
+                </div>
               </div>
+
               <div className="flex flex-col p-8 gap-0 md:gap-4 rounded-xl">
                 <p className="text-gray-400 !pb-0 text-left mr-4 !text-[0.9rem]">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
                 <img src="/portfolio/wiligent/Logo_Destails.svg" alt="" className="object-cover w-auto h-[200px]" />
@@ -44,9 +51,9 @@ export default function Wiligent() {
 
           <img src="/portfolio/wiligent/Wiligent_LP.png" alt="Landing Page Wiligent" className="mt-14 w-full h-auto object-top" />
 
-          <div className="relative mt-24 flex flex-col lg:flex-row justify-center items-center w-full">
-            <img src="/portfolio/wiligent/Ebook.png" alt="Ebook Crypto Tax Simplified: Simplificando Regras e Regulamentos para Crypto entusiastas" className="w-[700px] h-auto mx-auto" />
-            <img src="/portfolio/wiligent/Ebook_Pages.png" alt="Demonstração de páginas internas do Ebook" className="!rounded-none w-[700px] h-auto mx-auto mb-24" />
+          <div className="relative mt-24 flex flex-col md:flex-row justify-center items-center w-full">
+            <img src="/portfolio/wiligent/Ebook.png" alt="Ebook Crypto Tax Simplified: Simplificando Regras e Regulamentos para Crypto entusiastas" className="w-full md:w-[50%] lg:w-[700px] h-auto" />
+            <img src="/portfolio/wiligent/Ebook_Pages.png" alt="Demonstração de páginas internas do Ebook" className="!rounded-none w-full md:w-[50%] lg:w-[700px] h-auto mb-24" />
           </div>
         </div>
       </section>

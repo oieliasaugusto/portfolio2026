@@ -69,7 +69,7 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
             </span>
           </span>
           <span className="">Design para negócios</span>
-          <p className="w-[300px] md:w-full text-xl tracking-widest text-gray-300 font-[200] mt-4 leading-7">
+          <p className="w-[300px] md:w-full text-base tracking-widest text-gray-300 font-[200] mt-4 leading-7">
             Do layout ao low-code acelerado por Inteligência Artificial</p>
         </h1>
         <HeroSlider projects={projects} />
