@@ -78,20 +78,21 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="flex py-12 md:py-16">
+        <div className="flex py-8 md:pt-16">
           {projects.map((project) => (
-            <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_35%] min-w-0 pr-4 md:pr-12">
+            <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_85%] min-w-0 pr-4 md:pr-12">
               <Link
                 to={project.path}
-                className="group/card relative block glass-card rounded-[2.5rem] overflow-hidden transition-all duration-700 
-                ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-8 hover:shadow-[0_45px_90px_-20px_rgba(65,53,222,0.35)] 
-                h-[400px] md:h-[400px] border border-white/5 select-none"
+                className="group/card relative block glass-card rounded-[2.5rem] overflow-hidden 
+                transition-all duration-700 
+                hover:-translate-y-8 hover:shadow-[0_45px_90px_-20px_rgba(65,53,222,0.35)] 
+                h-[400px] w-md:h-[400px] border border-white/5 select-none"
               >
                 {/* Image */}
                 <img
                   src={project.banner}
                   alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover/card:scale-1"
+                  className="absolute inset-0 w-[full] h-full object-cover transition-transform duration-1000 ease-out group-hover/card:scale-1"
                 />
 
                 {/* Darker Gradient Overlay */}

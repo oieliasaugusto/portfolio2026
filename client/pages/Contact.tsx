@@ -21,10 +21,13 @@ export default function Contact() {
   return (
     <div className="min-h-screen text-foreground bg-black px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center">
       <div className="relative z-10 w-full md:max-w-2xl">
-        <h1 className="text-4xl md:leading-[1.3] font-regular tracking-tight mb-4 text-center">
+        <h1 className="text-5xl md:leading-[1.3] font-regular tracking-tight mb-4 text-center">
           Contato</h1>
-        <p className="text-center text-[hsl(var(--muted-foreground))]/60 mb-8">
-          Preencha os dados abaixo para conversar diretamente no WhatsApp</p>
+        {/* <div className="flex justify-center text-center text-[hsl(var(--muted-foreground))]/60 pb-8">
+          <p className="">Fale diretamente comigo no WhatsApp
+            ou envie-me um email para <a href="mailto:oieliasaugusto@gmail.com">oieliasaugusto@gmail.com</a>
+          </p>
+        </div> */}
 
         <div className="relative z-10 glass-card rounded-lg flex flex-col transition-shadow w-full">
           <div className="p-4 md:p-8 flex flex-col flex-grow justify-center gap-4">
@@ -57,13 +60,13 @@ export default function Contact() {
             <button
               onClick={handleSendWhatsApp}
               disabled={!name.trim() || !email.trim() || !message.trim()}
-              className="bg-[hsl(var(--primary))] w-full text-white text-md font-medium py-2 rounded-md flex items-center justify-center 
-              gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-[hsl(var(--primary))] w-full text-white text-md font-medium py-4 rounded-md flex items-center justify-center 
+              gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Enviar
               <img src="/whatsapp.svg" alt="WhatsApp" className="w-4 h-4" />
             </button>
-            <p className="text-center text-[hsl(var(--muted-foreground))]/60 text-sm font-light">
+            <p className="text-center text-[hsl(var(--muted-foreground))]/50 text-sm font-light">
               Após Enviar, você concorda em receber comunicações de acordo com a LGPD.</p>
           </div>
         </div>
@@ -71,6 +74,6 @@ export default function Contact() {
       {/* <div className="pointer-events-none absolute opacity-20 md:opacity-80 left-0 md:left-[80%] md:left-none Coffee w-[600px] flex items-center justify-center">
         <video autoPlay playsInline webkit-playsinline="true" disablePictureInPicture loop muted className="pointer-events-none"><source src="../../Coffee.mp4" type="video/mp4" /></video>
       </div> */}
-    </div>
+    </div >
   );
 }

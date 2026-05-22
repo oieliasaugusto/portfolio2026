@@ -63,7 +63,7 @@ export const Hero: React.FC<HeroProps> = ({ projects }) => {
           <span className="whitespace-nowrap">Soluções de</span>
           <span className="inline-flex items-center justify-center bg-[hsl(var(--primary))] 
           text-[hsl(var(--primary-foreground))] w-[120px] md:w-[220px] mx-2 text-center h-8 md:h-12">
-            <span className=" relative">
+            <span className="relative">
               {displayText}
               <span className="w-[1px] bg-current cursor-blink inline-block h-8 md:h-12 absolute -right-2 top-1/2 -translate-y-1/2"></span>
             </span>

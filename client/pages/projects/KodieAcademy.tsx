@@ -17,7 +17,7 @@ export default function KodieAcademy() {
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Resultado</h3>
           <p className="text-white/70 leading-relaxed">
-            Uma marca com autoridade, landing page de alta conversão e materiais visuais que comunicam juventude com solidez e confiança.
+            Uma marca que se comunica com autoridade, landing page convertendo e materiais visuais que comunicam juventude com solidez e confiança.
           </p>
         </div>
       </div>
@@ -28,13 +28,15 @@ export default function KodieAcademy() {
           <div className="flex flex-col justify-center items-center w-full">
             <img src="/portfolio/kodie/KV_Academy.png" alt="KODIE Academy" className="w-full h-auto" />
             <h4>KV KODIE Academy</h4>
-            <p className="max-w-[500px]">Representa talentos formados para conquistar o  espaço de protagonistas do futuro no mercado de tecnologia.</p>
+            <p className="max-w-[500px]">
+              Representa talentos formados para conquistar o espaço de protagonistas do futuro no mercado de tecnologia.</p>
           </div>
 
           <div className="flex flex-col justify-center items-center w-full">
             <img src="/portfolio/kodie/KV_Studio.png" alt="KODIE Studio" className="w-full h-auto" />
             <h4>KV KODIE Studio</h4>
-            <p className="max-w-[500px]">Talentos preparados para o mercado de trabalho, prontos para entregar soluções de tecnologia de alto nível e impacto.</p>
+            <p className="max-w-[500px]">
+              Profissionais prontos para liderar o mercado entregando soluções de tecnologia de alto nível e impacto.</p>
           </div>
 
           <div className="aspect-video relative my-8 w-full max-w-[1150px]">
