@@ -5,9 +5,9 @@ export default function KodieAcademy() {
   const mainRef = useProjectAnimation();
 
   return (
-    <main ref={mainRef} id="viewProject" className="px-6 md:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight">KODIE <span className="text-[#ff5c35]">Academy</span></h1>
+    <main ref={mainRef} id="viewProject" className="px-6 lg:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-12 project-info-grid">
+        <h1 className="text-5xl lg:text-6xl font-bold tracking-tight">KODIE <span className="text-[#ff5c35]">Academy</span></h1>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">
@@ -50,7 +50,7 @@ Uma marca que se comunica com autoridade, landing pageconvertendo e materiais vi
 
           <img src="/portfolio/kodie/YT_Banner.png" alt="YouTube" className="w-full h-auto" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <img src="/portfolio/kodie/Frente_Blusa.jpg" alt="Blusa KODIE" className="mx-auto object-cover" />
             <img src="/portfolio/kodie/Costas_Blusa.jpg" alt="Blusa KODIE" className="mx-auto object-cover" />
           </div>

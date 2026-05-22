@@ -7,47 +7,47 @@ export default function Wiligent() {
   const mainRef = useProjectAnimation();
 
   return (
-    <main ref={mainRef} id="viewProject" className="px-6 md:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 project-info-grid">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight">Wiligent <span className="text-[#35de8a]">Miami</span></h1>
+    <main ref={mainRef} id="viewProject" className="px-6 lg:px-10 lg:px-14 xl:px-40 py-24 min-h-screen bg-black">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-12 project-info-grid">
+        <h1 className="text-5xl lg:text-6xl font-bold tracking-tight">Wiligent <span className="text-[#35de8a]">Miami</span></h1>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#35de8a]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">Fazer o rebranding completo de um negócio contábil em Miami, além de tornar a marca moderna e atrativa para o seu público alvo.</p>
         </div>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#35de8a]">O Resultado</h3>
-          <p className="text-white/70 leading-relaxed">Uma nova marca e identidade visual, landing page personalizadacom foco em conversão, que gerou +1.800 acessos em 2 semanas.
+          <p className="text-white/70 leading-relaxed">Uma nova marca e identidade visual, landing page personalizadacom foco em conversão.
             <br /><span className="text-[#35de8a] font-light tracking-wider">+1.800 </span>acessos em 2 semanas.
           </p>
         </div>
       </div>
 
       <section id="projectImages" className="project-images mt-12 text-center">
-        <div className="overflow-hidden shadow-2xl">
-          <img src="/portfolio/wiligent/Wiligent.jpg" alt="Wiligent Miami" className="w-full h-auto" />
-
-          <h4 className="mt-14">Rebranding</h4>
-
-          <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8">
-            <div className="flex flex-col w-full justify-center items-center gap-4">
-              <div className="flex justify-center w-full items-center border border-white/40 rounded-2xl h-[150px] w-full md:w-[360px] overflow-hidden inline-block">
+        <div className="flex flex-col justify-center items-center overflow-hidden shadow-2xl">
+          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 lg:p-24 w-full h-auto" />
+          
+          <div className="flex flex-col lg:flex-row align-between w-full justify-between pt-14">
+            
+            <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-4">
+              <div className="flex justify-center w-full items-center border border-white/40 rounded-2xl h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
                 <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto h-[320px]" />
               </div>
-              <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full md:w-[360px]" />
+              <div className="flex flex-col p-8 gap-4 rounded-xl">
+                <p className="text-gray-400 !pb-0 text-left">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
+                <img src="/portfolio/wiligent/Logo_Destails.svg" alt="" className="object-cover w-auto h-[200px]" />
+                <p className="text-gray-400 !pb-0">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
+              </div>
+              <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full lg:w-[380px]" />
             </div>
-            <div className="flex flex-col bg-[#E6E6E6] p-8 gap-4 rounded-xl">
-              <p className="text-gray-500 !pb-0 text-left">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
-              <img src="/portfolio/wiligent/LogoIdea.png" alt="" className="object-cover w-auto h-[200px]" />
-              <p className="text-gray-500 !pb-0">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
-            </div>
-
+          
           </div>
 
-          <img src="/portfolio/wiligent/Wiligent_LP.png" alt="KODIE website" className="mt-14 w-full h-auto" />
+          <img src="/portfolio/wiligent/Wiligent_LP.png" alt="Landing Page Wiligent" className="mt-14 w-full h-auto object-top" />
 
-          <h4 className="mt-14">Ebook</h4>
-          <img src="/portfolio/wiligent/Ebook.png" alt="Ebooks" className="pl-[8%] w-[700px] h-auto mx-auto" />
-
+          <div className="relative mt-24 flex flex-col lg:flex-row justify-center items-center w-full">
+            <img src="/portfolio/wiligent/Ebook.png" alt="Ebook Crypto Tax Simplified: Simplificando Regras e Regulamentos para Crypto entusiastas" className="w-[700px] h-auto mx-auto" />
+            <img src="/portfolio/wiligent/Ebook_Pages.png" alt="Demonstração de páginas internas do Ebook" className="!rounded-0 w-[700px] h-auto mx-auto" />
+          </div>
         </div>
       </section>
 

@@ -50,9 +50,10 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
 
   return (
     <div className={cn("relative group/slider w-[100vw] left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-1 md:mt-2", className)}>
+      
       {/* Edge Fades */}
-      <div className="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-r  md:from-black via-black/40 to-transparent z-30 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-gradient-to-l md:from-black via-black/40 to-transparent z-30 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-32 md:w-24 bg-gradient-to-r  md:from-black via-black/40 to-transparent z-30 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 md:w-24 bg-gradient-to-l md:from-black via-black/40 to-transparent z-30 pointer-events-none" />
 
       {/* Navigation Arrows (Desktop Only) */}
       <button
@@ -80,19 +81,19 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ projects, className }) =
       >
         <div className="flex py-8 md:pt-16">
           {projects.map((project) => (
-            <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_85%] min-w-0 pr-4 md:pr-12">
+            <div key={project.id} className="flex-[0_0_85%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_35%] min-w-0 pr-4 md:pr-8">
               <Link
                 to={project.path}
                 className="group/card relative block glass-card rounded-[2.5rem] overflow-hidden 
                 transition-all duration-700 
                 hover:-translate-y-8 hover:shadow-[0_45px_90px_-20px_rgba(65,53,222,0.35)] 
-                h-[400px] w-md:h-[400px] border border-white/5 select-none"
+                h-[400px] md:h-[400px] border border-white/5 select-none"
               >
                 {/* Image */}
                 <img
                   src={project.banner}
                   alt={project.title}
-                  className="absolute inset-0 w-[full] h-full object-cover transition-transform duration-1000 ease-out group-hover/card:scale-1"
+                  className="absolute inset-0 w-[full] h-full object-cover object-right transition-transform duration-1000 ease-out group-hover/card:scale-1"
                 />
 
                 {/* Darker Gradient Overlay */}
