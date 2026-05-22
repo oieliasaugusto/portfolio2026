@@ -24,20 +24,20 @@ export default function Wiligent() {
 
       <section id="projectImages" className="project-images mt-12 text-center">
         <div className="flex flex-col justify-center items-center overflow-hidden shadow-2xl">
-          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 lg:p-52 w-full h-auto" />
+          <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 !py-12 md:p-14 lg:p-52 w-full h-auto !rounded-none md:!rounded-3xl" />
           
           <div className="flex flex-col lg:flex-row align-between w-full justify-between pt-14">
             
             <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-4">
-              <div className="flex justify-center w-full items-center border border-white/40 rounded-2xl h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
+              <div className="flex justify-center w-full bg-[#01152C] items-center border border-white/40 rounded-2xl h-[160px] md:h-[220px] w-full lg:w-[500px] overflow-hidden inline-block">
                 <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto h-[320px]" />
               </div>
-              <div className="flex flex-col p-8 gap-4 rounded-xl">
-                <p className="text-gray-400 !pb-0 text-left">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
+              <div className="flex flex-col p-8 gap-0 md:gap-4 rounded-xl">
+                <p className="text-gray-400 !pb-0 text-left mr-4 !text-[0.9rem]">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
                 <img src="/portfolio/wiligent/Logo_Destails.svg" alt="" className="object-cover w-auto h-[200px]" />
-                <p className="text-gray-400 !pb-0">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
+                <p className="text-gray-400 !pb-0 !text-[0.9rem]">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
               </div>
-              <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full lg:w-[380px]" />
+              <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full lg:w-[480px] md:w-[380px]" />
             </div>
           
           </div>
@@ -46,7 +46,7 @@ export default function Wiligent() {
 
           <div className="relative mt-24 flex flex-col lg:flex-row justify-center items-center w-full">
             <img src="/portfolio/wiligent/Ebook.png" alt="Ebook Crypto Tax Simplified: Simplificando Regras e Regulamentos para Crypto entusiastas" className="w-[700px] h-auto mx-auto" />
-            <img src="/portfolio/wiligent/Ebook_Pages.png" alt="Demonstração de páginas internas do Ebook" className="!rounded-0 w-[700px] h-auto mx-auto" />
+            <img src="/portfolio/wiligent/Ebook_Pages.png" alt="Demonstração de páginas internas do Ebook" className="!rounded-none w-[700px] h-auto mx-auto mb-24" />
           </div>
         </div>
       </section>
