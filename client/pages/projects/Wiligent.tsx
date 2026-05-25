@@ -26,31 +26,19 @@ export default function Wiligent() {
         <div className="flex flex-col justify-center items-center shadow-2xl">
           <img src="/portfolio/wiligent/Wiligent_BrandDesign.svg" alt="Wiligent Miami" className="bg-white p-4 py-12 md:p-32 lg:p-32 w-full h-auto" />
           
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-12 gap-8">
-            
-            <div className="flex flex-col w-full justify-center items-center gap-4">
-              <div className="flex flex-col w-full justify-center items-center gap-4">
-                <div className="flex justify-center w-full bg-[#01152C] items-center border border-white/40 rounded-2xl h-[100px] w-[200px] md:h-[150px] md:w-[400px] lg:h-[200px] lg:w-[500px] overflow-hidden inline-block">
-                  <video src="/portfolio/wiligent/LogoAnimation.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto md:h-[320px]" />
-                </div>
+          <div className="w-full flex flex-col items-center gap-8 p-12">
 
-                <div className="flex justify-center w-full bg-[#061f3e] px-12 items-center border border-white/40 rounded-2xl h-[80px] w-[200px] md:h-[150px] md:w-[400px] lg:h-[200px] lg:w-[500px] overflow-hidden inline-block">
-                  <video src="/portfolio/wiligent/Loading1.mp4" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none w-auto" />
-                </div>
-              </div>
-            </div>
+          <video src="/portfolio/wiligent/Wiligent_Logo.webm" autoPlay loop muted playsInline webkit-playsinline className="pointer-events-none h-full md:h-[280px] my-24" />
 
-            <div className="flex flex-col md:flex-row w-full justify-center items-center md:gap-4">
-            <div className="w-full flex flex-col md:p-8 md:gap-4">
-              <p className="text-gray-400 !pb-0 text-left md:mr-4 !text-[0.9rem]">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
-              <img src="/portfolio/wiligent/Logo_Destails.svg" alt="Na marca Wiligent, a lupa ao redor do W simboliza a habilidade de pesquisa, análise e resolução de problemas. Enquanto o W em destaque na cor, representa visualmente as ações e negociações de criptomoedas sintetizadas num gráfico de crescimento" className="object-cover w-auto md:h-[200px]" />
-              <p className="text-green-400 !pt-0 !text-[0.9rem]">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
-            </div>
-            </div>
-                        {/* <img src="/portfolio/wiligent/Wiligent_Logo.png" alt="Logo" className="w-full lg:w-[480px] md:w-[380px]" /> */}
+          <div className="w-full flex flex-col items-center md:p-8 md:gap-4">
+            <p className="text-gray-400 !pb-0 text-left md:mr-4 !text-[0.9rem]">Simboliza a habilidade de pesquisa, análise e resolução de problemas</p>
+            <img src="/portfolio/wiligent/Logo_Destails.svg" alt="Na marca Wiligent, a lupa ao redor do W simboliza a habilidade de pesquisa, análise e resolução de problemas. Enquanto o W em destaque na cor, representa visualmente as ações e negociações de criptomoedas sintetizadas num gráfico de crescimento" className="object-cover w-auto md:h-[200px]" />
+            <p className="text-green-400 !pt-0 !text-[0.9rem] text-left md:ml-24">Ações e negociações de criptomoedas sintetizadas num gráfico de crescimento</p>
           </div>
 
-          <img src="/portfolio/wiligent/Wiligent_LP.png" alt="Landing Page Wiligent" className="mt-14 w-full h-auto object-top" />
+          </div>
+
+          <img src="/portfolio/wiligent/Wiligent_LP_Mockup.png" alt="Landing Page Wiligent" className="mt-14 w-full h-auto object-top" />
 
           <div className="relative mt-24 flex flex-col md:flex-row justify-center items-center w-full">
             <img src="/portfolio/wiligent/Ebook.png" alt="Ebook Crypto Tax Simplified: Simplificando Regras e Regulamentos para Crypto entusiastas" className="w-full h-auto md:w-[50%] lg:w-[700px] mr-[-64px]" />

@@ -56,8 +56,9 @@ export default function KodieAcademy() {
           </div>
 
           {/* Landing page ---nao trazer versao mobile */}
-          <img src="/portfolio/kodie/LP_KODIE.jpg" alt="KODIE website" className="w-full h-auto" />
-
+          <div>
+            <img src="/portfolio/kodie/LP_KODIE.jpg" alt="KODIE website" className="w-full h-auto" />
+          </div>
           <img src="/portfolio/kodie/OnePage_KODIE.png" alt="One page" className="w-full h-auto" />
 
           {/* LIVE de Lançamento */}

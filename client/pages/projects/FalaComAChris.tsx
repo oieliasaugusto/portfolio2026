@@ -29,8 +29,17 @@ export default function FalaComAChris() {
 
           <img src="/portfolio/ptchris/BannerChris.jpg" alt="Chris website" className="w-auto h-auto !rounded-none" />
 
-          <div className="flex flex-col gap-4 items-center justify-center w-auto p-4 py-12 md:p-14 lg:p-52 bg-white">
-            <img src="/portfolio/ptchris/Chris_BrandDesign.svg" alt="" className="h-auto" />
+          <div className="flex flex-col gap-4 items-center justify-center w-auto p-4 py-12 md:p-14 lg:p-24 bg-white">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-auto h-auto"
+            >
+              <source src="/portfolio/ptchris/LogoAnimation.webm" type="video/webm" />
+            </video>
+            <img src="/portfolio/ptchris/Chris_BrandDesign.svg" alt="" className="pt-4 md:pt-8 h-auto !rounded-none md:px-24" />
           </div>
 
           <div className="bg-[#2170CC] w-auto grid grid-cols-1 md:p-4">
@@ -38,7 +47,7 @@ export default function FalaComAChris() {
               <img src="/portfolio/ptchris/Screen1.png" alt="Tela de inicial de busca de profissionais por categoria de serviços" className="h-auto !rounded-3xl max-h-auto md:max-h-[600px] lg:max-h-[650px] object-contain px-4 md:px-0 md:shadow-xl z-index-10" />
               {/* FLUXO DE CADASTRO */}
               <img src="/portfolio/ptchris/1Cadastro.svg" alt="Fluxo de Cadastro de novos usuários" 
-              className="bg-white !rounded-none p-4 lg:p-8 w-auto h-auto max-h-auto md:max-h-[550px] lg:max-h-[590px] object-contain z-index-10" />
+              className="bg-white !rounded-none py-8 p-4 lg:p-8 w-auto h-auto max-h-auto md:max-h-[550px] lg:max-h-[590px] object-contain z-index-10" />
               <img src="/portfolio/ptchris/Screen2.png" alt="Tela de personalização da solicitação de serviços" className="h-auto w-[90%] md:w-auto !rounded-3xl max-h-auto md:max-h-[600px] lg:max-h-[650px]  object-contain shadow-xl z-index-10" />
             </div>
 
