@@ -14,6 +14,13 @@ export const projects: Project[] = [
     banner: "/portfolio/kodie/KODIE.jpg",
     path: "/projetos/kodie-academy",
   },
+    {
+    id: "fala-com-a-chris",
+    title: "Fala com a Chris",
+    description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
+    banner: "/portfolio/ptchris/BannerChris.jpg",
+    path: "/projetos/fala-com-a-chris",
+  },
   {
     id: "wiligent",
     title: "Wiligent",
@@ -21,13 +28,7 @@ export const projects: Project[] = [
     banner: "/portfolio/wiligent/WiligentMiami.jpg",
     path: "/projetos/wiligent",
   },
-  {
-    id: "fala-com-a-chris",
-    title: "Fala com a Chris",
-    description: "Aplicativo MVP criado para conectar profissionais e contratantes em Portugal.",
-    banner: "/portfolio/ptchris/BannerChris.jpg",
-    path: "/projetos/fala-com-a-chris",
-  },
+
   // {
   //   id: "reel",
   //   title: "Motion Reel",

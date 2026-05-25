@@ -28,14 +28,8 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     }
   };
 
-  // Route transition lifecycle
+  // Refresh ScrollTrigger to account for dynamic height changes
   React.useEffect(() => {
-    // Scroll to top on project pages
-    if (location.pathname.startsWith("/projetos")) {
-      window.scrollTo({ top: 0, behavior: "auto" });
-    }
-
-    // Refresh ScrollTrigger to account for dynamic height changes
     const timer = setTimeout(() => ScrollTrigger.refresh(), 200);
     return () => clearTimeout(timer);
   }, [location.pathname]);
@@ -55,6 +49,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             >
               Sobre
             </Link>
+            {/* <Link
+              to="/services"
+              className="text-[0.7rem] md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+            >
+              Serviços
+            </Link> */}
           </div>
 
           <div className="w-1/3 flex justify-center">

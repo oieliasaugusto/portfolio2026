@@ -18,6 +18,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Mobiplus from "./pages/projects/Mobiplus";
 import Reel from "./pages/projects/Reel";
+import Services from "./pages/Services";
 import { Layout } from "@/components/Layout";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/projetos/mobiplus" element={<Mobiplus />} />
             <Route path="/contato" element={<Contact />} />
             <Route path="/sobre" element={<About />} />
+            <Route path="/services" element={<Services />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

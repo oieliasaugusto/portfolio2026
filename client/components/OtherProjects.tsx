@@ -15,8 +15,8 @@ interface OtherProjectsProps {
 export default function OtherProjects({ currentId }: OtherProjectsProps) {
   return (
     <section id="otherProjects" className="border-t border-white/10 pt-12">
-      <div className="flex items-center justify-between mb-12">
-        <h2 className="text-3xl md:text-4xl font-regular">Outros Projetos</h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-2xl md:text-4xl font-regular">Outros Projetos</h2>
       </div>
 
       <Carousel

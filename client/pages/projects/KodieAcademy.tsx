@@ -26,14 +26,14 @@ export default function KodieAcademy() {
           <div className="flex flex-col justify-center items-center w-full">
             <img src="/portfolio/kodie/KV_Academy.png" alt="KODIE Academy" className="w-full h-auto" />
             <h4>KV KODIE Academy</h4>
-            <p className="max-w-[500px]">
+            <p className="max-w-[500px] text-white/70">
               Representa talentos formados para conquistar o espaço de protagonistas do futuro no mercado de tecnologia.</p>
           </div>
 
           <div className="flex flex-col justify-center items-center w-full">
             <img src="/portfolio/kodie/KV_Studio.png" alt="KODIE Studio" className="w-full h-auto" />
             <h4>KV KODIE Studio</h4>
-            <p className="max-w-[500px]">
+            <p className="max-w-[500px] text-white/70">
               Profissionais prontos para liderar o mercado entregando soluções de tecnologia de alto nível e impacto.</p>
           </div>
 
