@@ -37,7 +37,9 @@ export default function KodieAcademy() {
               Profissionais prontos para liderar o mercado entregando soluções de tecnologia de alto nível e impacto.</p>
           </div>
 
+          {/* Motion Manifesto */}
           <div className="aspect-video relative my-8 w-full max-w-[1150px]">
+            <div className="h-8" id="motion"></div>
             <iframe
               src="https://player.vimeo.com/video/1194209665?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               frameBorder={0}
