@@ -11,12 +11,14 @@ export default function KodieAcademy() {
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Desafio</h3>
           <p className="text-white/70 leading-relaxed">
-            Desenvolver uma campanha de lançamento da nova marca e comunicar o seu novo modelo de negócio ao mercado de educação e tecnologia latino-americano.          </p>
+            Desenvolver uma campanha de lançamento da nova marca e comunicar o seu novo modelo de negócio ao mercado de educação e tecnologia latino-americano.</p>
         </div>
         <div>
           <h3 className="text-xs uppercase pb-4 tracking-widest text-[#ff5c35]">O Resultado</h3>
           <p className="text-white/70 leading-relaxed">
-            Uma marca que se comunica com autoridade, landing page convertendo e materiais visuais que comunicam juventude com solidez e confiança.          </p>
+            Uma marca que se comunica juventude com solidez e confiança.
+            Alcançamos <span className="text-[#ff5c35]">90%</span> de retenção da audiência durante a live de lançamento. Enquanto <span className="text-[#ff5c35]">75%</span> seguiu os novos canais da marca.
+          </p>
         </div>
       </div>
 
@@ -34,7 +36,7 @@ export default function KodieAcademy() {
             <img src="/portfolio/kodie/KV_Studio.png" alt="KODIE Studio" className="w-full h-auto" />
             <h4>KV KODIE Studio</h4>
             <p className="max-w-[500px] text-white/70">
-              Profissionais prontos para liderar o mercado entregando soluções de tecnologia de alto nível e impacto.</p>
+              Profissionais prontos para liderar o mercado entregando soluções de tecnologia de alto nível e impacto após a formação da Academy.</p>
           </div>
 
           {/* Motion Manifesto */}
