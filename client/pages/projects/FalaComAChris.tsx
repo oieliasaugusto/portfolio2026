@@ -42,8 +42,8 @@ export default function FalaComAChris() {
             <img src="/portfolio/ptchris/Chris_BrandDesign.svg" alt="" className="pt-4 md:pt-8 h-auto !rounded-none md:px-24" />
           </div>
 
-          <div className="bg-[#2170CC] w-auto grid grid-cols-1 md:p-4">
-            <div className="flex flex-col md:flex-row content-center items-center !py-8 lg:p-4 gap-4 md:gap-0 w-full">
+          <div className="bg-white flex flex-col items-center md:p-4">
+            <div className="flex flex-col md:flex-row content-center items-center !py-8 lg:p-4 gap-4 md:gap-0">
               <img src="/portfolio/ptchris/Screen1.png" alt="Tela de inicial de busca de profissionais por categoria de serviços" className="h-auto !rounded-3xl max-h-auto md:max-h-[600px] lg:max-h-[650px] object-contain px-4 md:px-0 md:shadow-xl z-index-10" />
               {/* FLUXO DE CADASTRO */}
               <img src="/portfolio/ptchris/1Cadastro.svg" alt="Fluxo de Cadastro de novos usuários" 
@@ -51,7 +51,7 @@ export default function FalaComAChris() {
               <img src="/portfolio/ptchris/Screen2.png" alt="Tela de personalização da solicitação de serviços" className="h-auto w-[90%] md:w-auto !rounded-3xl max-h-auto md:max-h-[600px] lg:max-h-[650px]  object-contain shadow-xl z-index-10" />
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-y-8 bg-[#2170CC] lg:p-8">
+            <div className="flex flex-col md:flex-row items-center gap-y-8 lg:p-8">
               <img src="/portfolio/ptchris/Screen3.png" alt="" className="h-auto w-auto max-h-auto !rounded-3xl md:max-h-[600px] lg:max-h-[650px] object-contain px-4 md:px-0 md:shadow-xl" />
               {/* FLUXO DE CONTRATAÇÃO */}
               <img src="/portfolio/ptchris/2Contratacao.svg" alt="" className="bg-white p-4 md:p-16 lg:p-24 w-auto !rounded-none h-auto max-h-auto md:max-h-[500px] lg:max-h-[580px] object-contain" />
@@ -59,7 +59,7 @@ export default function FalaComAChris() {
 
             </div>
 
-            <div className="flex flex-col md:flex-row lg:flex-row items-center gap-8 md:gap-8 bg-[#2170CC] px-4 py-8 lg:p-8">
+            <div className="flex flex-col md:flex-row lg:flex-row items-center gap-8 md:gap-8 rounded-3xl bg-[#2170CC] px-4 py-8 lg:p-8 my-12 md:my-1">
               <img src="/portfolio/ptchris/Resumo.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
               <img src="/portfolio/ptchris/Screen4.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
               <img src="/portfolio/ptchris/Screen5.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
