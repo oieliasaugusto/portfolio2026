@@ -5,16 +5,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 import { Footer } from "@/components/Footer";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-/**
- * Layout Component
- * Senior Refactor: Manages the global UI shell and provides cross-page navigation utilities.
- */
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   // Enable global smooth scrolling
   useSmoothScroll();
@@ -34,49 +33,95 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
-  // Header Visibility Logic removed as requested
-  // Header will now stay permanently visible
-
   return (
     <div className="min-h-screen text-foreground overflow-hidden selection:bg-[hsl(var(--primary))] selection:text-white">
       {/* Global Header */}
-      <header className="w-full flex justify-center items-center mt-1 md:mt-2 relative z-40">
-        <div className="max-w-full md:max-w-[1200px] gap-20 md:gap-24 flex justify-center items-center">
-          <div className="w-8 w-1/3 flex justify-start">
-            <Link
-              to="/sobre"
-              className="text-[0.7rem] pr-4 md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
-            >
-              Sobre
-            </Link>
-            {/* <Link
-              to="/services"
-              className="text-[0.7rem] md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
-            >
-              Serviços
-            </Link> */}
-          </div>
+      <header className="w-full flex justify-center items-center mt-4 md:mt-6 relative z-40 px-6 md:px-10 lg:px-14 xl:px-40">
+        <div className="w-full max-w-[1200px] flex justify-between items-center">
 
-          <div className="w-1/3 flex justify-center">
+          {/* Logo / Nome: Fixado na Extrema Esquerda */}
+          <div className="flex justify-start">
             <Link
               to="/"
               onClick={handleLogoClick}
               id="Name"
-              className="text-lg flex content-center gap-4 md:text-2xl tracking-tighter whitespace-nowrap hover:scale-105 transition-transform duration-300"
+              className="text-lg flex content-center gap-4 md:text-2xl font-semibold tracking-tighter whitespace-nowrap hover:scale-105 transition-transform duration-300"
             >
-              {/* <img src="ExM_logo.svg" alt="Logo Expresse sua Marca" className="w-8 h-8" /> */}
               Elias Augusto
             </Link>
           </div>
 
-          <div className="w-8 w-1/3 flex justify-end">
+          {/* Menu de Navegação Desktop: Todo alinhado à Direita */}
+          <nav className="hidden md:flex items-center gap-6 md:gap-8">
+            <Link
+              to="/sobre"
+              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+            >
+              Sobre
+            </Link>
+
+            <Link
+              to="/services"
+              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+            >
+              Serviços
+            </Link>
+
             <Link
               to="/contato"
-              className="text-[0.7rem] pl-4 md:text-md tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Contato
             </Link>
+          </nav>
+
+          {/* Menu de Navegação Mobile */}
+          <div className="md:hidden flex items-center">
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <button className="p-2 -mr-2 text-foreground hover:text-[hsl(var(--primary))] transition-colors">
+                  <Menu className="w-6 h-6" />
+                  <span className="sr-only">Abrir menu</span>
+                </button>
+              </SheetTrigger>
+              <SheetContent
+                side="right"
+                className="w-[300px] sm:w-[400px] flex flex-col gap-8 pt-24 bg-background/10 backdrop-blur-md border-none shadow-2xl [&>button.opacity-70]:hidden"
+              >
+                <SheetClose asChild>
+                  <button className="absolute top-4 right-6 p-2 -mr-2 text-foreground hover:text-[hsl(var(--primary))] transition-colors">
+                    <X className="w-6 h-6" />
+                    <span className="sr-only">Fechar menu</span>
+                  </button>
+                </SheetClose>
+                <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
+                <nav className="flex flex-col gap-6">
+                  <Link
+                    to="/sobre"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                  >
+                    Sobre
+                  </Link>
+                  <Link
+                    to="/services"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                  >
+                    Serviços
+                  </Link>
+                  <Link
+                    to="/contato"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                  >
+                    Contato
+                  </Link>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
+
         </div>
       </header>
 
