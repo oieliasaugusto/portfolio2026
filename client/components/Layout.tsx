@@ -5,12 +5,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 import { Footer } from "@/components/Footer";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   // Enable global smooth scrolling
   useSmoothScroll();
@@ -48,29 +51,76 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             </Link>
           </div>
 
-          {/* Menu de Navegação: Todo alinhado à Direita */}
-          <nav className="flex items-center gap-6 md:gap-8">
+          {/* Menu de Navegação Desktop: Todo alinhado à Direita */}
+          <nav className="hidden md:flex items-center gap-6 md:gap-8">
             <Link
               to="/sobre"
-              className="!text-[0.7rem] md:text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Sobre
             </Link>
 
             <Link
               to="/services"
-              className="!text-[0.7rem] md:text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Serviços
             </Link>
 
             <Link
               to="/contato"
-              className="!text-[0.7rem] md:text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Contato
             </Link>
           </nav>
+
+          {/* Menu de Navegação Mobile */}
+          <div className="md:hidden flex items-center">
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <button className="p-2 -mr-2 text-foreground hover:text-[hsl(var(--primary))] transition-colors">
+                  <Menu className="w-6 h-6" />
+                  <span className="sr-only">Abrir menu</span>
+                </button>
+              </SheetTrigger>
+              <SheetContent
+                side="right"
+                className="w-[300px] sm:w-[400px] flex flex-col gap-8 pt-24 bg-background/10 backdrop-blur-md border-none shadow-2xl [&>button.opacity-70]:hidden"
+              >
+                <SheetClose asChild>
+                  <button className="absolute top-4 right-6 p-2 -mr-2 text-foreground hover:text-[hsl(var(--primary))] transition-colors">
+                    <X className="w-6 h-6" />
+                    <span className="sr-only">Fechar menu</span>
+                  </button>
+                </SheetClose>
+                <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
+                <nav className="flex flex-col gap-6">
+                  <Link
+                    to="/sobre"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                  >
+                    Sobre
+                  </Link>
+                  <Link
+                    to="/services"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                  >
+                    Serviços
+                  </Link>
+                  <Link
+                    to="/contato"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                  >
+                    Contato
+                  </Link>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
 
         </div>
       </header>
