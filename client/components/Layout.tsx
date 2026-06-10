@@ -55,21 +55,21 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <nav className="hidden md:flex items-center gap-6 md:gap-8">
             <Link
               to="/sobre"
-              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-xs tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Sobre
             </Link>
 
             <Link
               to="/services"
-              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-xs tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Serviços
             </Link>
 
             <Link
               to="/contato"
-              className="text-sm tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className="text-xs tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Contato
             </Link>
