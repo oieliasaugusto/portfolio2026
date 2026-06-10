@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { projects } from "@/lib/projects";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/contactForm";
 import { Gem, PenTool, Gauge } from "lucide-react";
 
 // Filtrando exclusivamente os cases solicitados
