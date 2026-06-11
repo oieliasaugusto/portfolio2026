@@ -26,17 +26,17 @@ export default function Services() {
             playsInline
             loop
             muted
-            className="pl-[5%] w-[95%] h-[50%] object-cover mt-20 scale-105"
+            className="pl-[5%] w-[95%] h-[40%] md:h-[50%] object-cover mt-48 md:mt-20 scale-105"
           >
             <source src="/Loop.webm" type="video/mp4" />
           </video>
           {/* Gradação para misturar o vídeo perfeitamente com o fundo preto da página */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black from-[5%] via-transparent via-[20%] to-black to-[100%] z-10" />
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-black from-[5%] via-transparent via-[20%] to-black to-[100%] z-10" /> */}
           <div className="absolute inset-0 bg-gradient-to-r from-black from-[5%] via-transparent via-[20%] to-black to-[100%] z-10" />
         </div>
 
         {/* Conteúdo da Hero */}
-        <div className="max-w-[1200px] text-center mb-[20%] z-20 backdrop-blur-[2px] py-0 rounded-3xl">
+        <div className="max-w-[1200px] text-center mt-[-250px] lg:mt-0 md:mb-[20%] z-20 backdrop-blur-[2px] py-0 rounded-3xl">
 
           <h1 className="text-3xl md:text-4xl lg:max-w-4xl mx-auto !leading-[1.4] mb-6">
             Valorize sua oferta. Transforme visitantes em compradores.
@@ -49,7 +49,7 @@ export default function Services() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
-              className="w-full sm:w-auto text-center bg-[#5B51D8] hover:bg-[#4A40C7] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-[#5B51D8]/20 hover:scale-[1.02]"
+              className="w-full sm:w-auto text-center bg-[#5B51D8] hover:bg-[#4A40C7] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-[#5B51D8]/20 hover:bg-[#5B51D8]/80"
             >
               Quero Começar
             </a>
@@ -117,7 +117,7 @@ export default function Services() {
         <div className="w-full max-w-[1000px] mx-auto">
 
           <div className="mb-20 md:text-center">
-            <h3 className="text-3xl md:text-4xl font-semibold">Como vamos trabalhar juntos</h3>
+            <h3 className="text-3xl md:text-4xl">Como vamos trabalhar juntos</h3>
             <p className="text-white/50 font-light mt-4 max-w-2xl md:mx-auto text-sm md:text-base">
               Um processo transparente e descomplicado para tirar o seu projeto do papel.
             </p>
@@ -187,9 +187,9 @@ export default function Services() {
             {/* CARD 04 - DESENVOLVIMENTO */}
             <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
               <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 5</div>
-              <h4 className="text-xl font-bold mb-3 text-white">Construção & Código</h4>
+              <h4 className="text-xl font-semibold mb-3 text-white">Desenvolvimento Low-code</h4>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                O visual aprovado se torna uma página real, rápida, segura e totalmente adaptada para funcionar perfeitamente em celulares e computadores.
+                A estrutura aprovada será contruída. Navegação rápida e totalmente responsiva, otimizada para celulares e computadores.
               </p>
             </div>
 
