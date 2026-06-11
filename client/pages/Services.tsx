@@ -26,9 +26,9 @@ export default function Services() {
             playsInline
             loop
             muted
-            className="pl-[5%] w-[95%] h-[50%] object-cover mt-20 scale-105 opacity-100 brightness-80"
+            className="pl-[5%] w-[95%] h-[50%] object-cover mt-20 scale-105"
           >
-            <source src="/Loop.mp4" type="video/mp4" />
+            <source src="/Loop.webm" type="video/mp4" />
           </video>
           {/* Gradação para misturar o vídeo perfeitamente com o fundo preto da página */}
           <div className="absolute inset-0 bg-gradient-to-b from-black from-[5%] via-transparent via-[20%] to-black to-[100%] z-10" />
