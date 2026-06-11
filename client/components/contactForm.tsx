@@ -22,13 +22,7 @@ export default function ContactForm() {
         <section id="contato" className="py-24 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center border-t border-white/5 bg-gradient-to-b from-black to-[#5B51D8]/05">
             <div className="relative z-10 w-full md:max-w-2xl">
                 <div className="mb-8 text-center">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5B51D8]/10 border border-[#5B51D8]/30 text-[#8B83FF] text-xs uppercase tracking-widest mb-6 font-mono">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#5B51D8] animate-pulse"></span>
-                        Vamos trabalhar juntos
-                    </div>
-                    <h1 className="text-4xl md:text-5xl font-semibold text-white">
-                        Fale Comigo!
-                    </h1>
+                    <h1 className="text-4xl md:text-4xl text-white !leading-[1.4]">Quer levar seus negócios para um novo nível? Fale comigo</h1>
                 </div>
 
                 <div className="relative z-10 bg-white/[0.02] border border-white/10 rounded-2xl flex flex-col w-full backdrop-blur-md">
@@ -72,6 +66,6 @@ export default function ContactForm() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

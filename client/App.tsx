@@ -8,16 +8,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Kensei from "./pages/projects/Kensei";
-import Vnw from "./pages/projects/Vnw";
 import Wiligent from "./pages/projects/Wiligent";
 import KodieAcademy from "./pages/projects/KodieAcademy";
 import FalaComAChris from "./pages/projects/FalaComAChris";
-import Toca from "./pages/projects/Toca";
-import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Mobiplus from "./pages/projects/Mobiplus";
-import Reel from "./pages/projects/Reel";
 import Services from "./pages/Services";
 import { Layout } from "@/components/Layout";
 
@@ -32,15 +26,9 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/projetos/reel" element={<Reel />} />
             <Route path="/projetos/kodie-academy" element={<KodieAcademy />} />
-            <Route path="/projetos/fala-com-a-chris" element={<FalaComAChris />} />
+            <Route path="/projetos/chris-app" element={<FalaComAChris />} />
             <Route path="/projetos/wiligent" element={<Wiligent />} />
-            <Route path="/projetos/toca" element={<Toca />} />
-            <Route path="/projetos/kensei" element={<Kensei />} />
-            <Route path="/projetos/vnw" element={<Vnw />} />
-            <Route path="/projetos/mobiplus" element={<Mobiplus />} />
-            <Route path="/contato" element={<Contact />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/services" element={<Services />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
