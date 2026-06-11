@@ -44,7 +44,6 @@ const NotFound = () => {
         <p className="text-white/60 my-8 leading-relaxed">
           A página que você procura foi abduzida!
         </p>
-
         <p className="pt-8 text-lg font-semibold">
           Você será redirecionado em {counter}...
         </p>

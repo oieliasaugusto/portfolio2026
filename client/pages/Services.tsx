@@ -20,25 +20,23 @@ export default function Services() {
       <section className="relative min-h-[90vh] pt-40 pb-20 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center border-b border-white/5 overflow-hidden">
 
         {/* Container do Vídeo de Background */}
-        <div className="absolute bottom-0 inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+        <div className="absolute w-full lg:w-[40%] lg:translate-x-[75%] translate-y-[40%] bottom-0 inset-0 h-full pointer-events-none overflow-hidden">
           <video
             autoPlay
             playsInline
             loop
             muted
-            className="w-full h-full object-cover object-top mt-16 scale-105 opacity-30 brightness-50"
+            className="pl-[5%] w-[95%] h-[50%] object-cover mt-20 scale-105 opacity-100 brightness-80"
           >
-            <source src="/Loop.mp4" type="video/webm" />
+            <source src="/Loop.mp4" type="video/mp4" />
           </video>
           {/* Gradação para misturar o vídeo perfeitamente com o fundo preto da página */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black from-[5%] via-transparent via-[80%] to-black to-[100%] z-10" />        </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black from-[5%] via-transparent via-[20%] to-black to-[100%] z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black from-[5%] via-transparent via-[20%] to-black to-[100%] z-10" />
+        </div>
 
         {/* Conteúdo da Hero */}
         <div className="max-w-[1200px] text-center mb-[20%] z-20 backdrop-blur-[2px] py-0 rounded-3xl">
-          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5B51D8]/10 border border-[#5B51D8]/30 text-[#8B83FF] text-xs uppercase tracking-widest mb-6 font-mono">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#5B51D8] animate-pulse"></span>
-            Páginas de Venda do Design ao Código
-          </div> */}
 
           <h1 className="text-3xl md:text-4xl lg:max-w-4xl mx-auto !leading-[1.4] mb-6">
             Valorize sua oferta. Transforme visitantes em compradores.
@@ -130,14 +128,7 @@ export default function Services() {
 
             {/* INÍCIO (NÃO-CARD): Identificação do problema */}
             <div className="flex flex-col items-center">
-              {/* Contorno cinza do badge acentuado de border-white/10 para border-white/25 */}
-              {/* <div className="flex items-center gap-3 bg-white/5 border border-white/25 px-4 py-2 rounded-full backdrop-blur-sm">
-                <div className="text-white/80 font-mono text-xs uppercase tracking-wider">fase 1</div>
-                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-                <span className="text-xs md:text-sm font-medium tracking-wide text-white/90">
-                  Identificação do Problema
-                </span>
-              </div> */}
+
               <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
                 <span className="absolute top-4 right-4 text-xs font-mono px-2 py-0.5 bg-[#38761d] rounded text-white">
                   OK

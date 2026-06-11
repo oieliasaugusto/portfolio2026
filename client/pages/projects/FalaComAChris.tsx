@@ -1,6 +1,5 @@
 import { useProjectAnimation } from "@/hooks/useProjectAnimation";
 import OtherProjects from "@/components/OtherProjects";
-import UserFlow from "@/components/ChrisAppUserFlow";
 
 export default function FalaComAChris() {
   const mainRef = useProjectAnimation();
@@ -46,8 +45,8 @@ export default function FalaComAChris() {
             <div className="flex flex-col md:flex-row content-center items-center !py-8 lg:p-4 gap-4 md:gap-0">
               <img src="/portfolio/ptchris/Screen1.png" alt="Tela de inicial de busca de profissionais por categoria de serviços" className="h-auto !rounded-3xl max-h-auto md:max-h-[600px] lg:max-h-[650px] object-contain px-4 md:px-0 md:shadow-xl z-index-10" />
               {/* FLUXO DE CADASTRO */}
-              <img src="/portfolio/ptchris/1Cadastro.svg" alt="Fluxo de Cadastro de novos usuários" 
-              className="bg-white !rounded-none py-8 p-4 lg:p-8 w-auto h-auto max-h-auto md:max-h-[550px] lg:max-h-[590px] object-contain z-index-10" />
+              <img src="/portfolio/ptchris/1Cadastro.svg" alt="Fluxo de Cadastro de novos usuários"
+                className="bg-white !rounded-none py-8 p-4 lg:p-8 w-auto h-auto max-h-auto md:max-h-[550px] lg:max-h-[590px] object-contain z-index-10" />
               <img src="/portfolio/ptchris/Screen2.png" alt="Tela de personalização da solicitação de serviços" className="h-auto w-[90%] md:w-auto !rounded-3xl max-h-auto md:max-h-[600px] lg:max-h-[650px]  object-contain shadow-xl z-index-10" />
             </div>
 
@@ -69,8 +68,8 @@ export default function FalaComAChris() {
             <div className="flex flex-col md:flex-row items-center justify-center w-auto gap-y-4 lg:p-8">
               {/* FLUXO DE ATENDIMENTO */}
               <img src="/portfolio/ptchris/3Atendimento.svg" alt="Durante o fluxo de atendimento o profissional notifica o contratando à cada status, da ida ao local até a conclusão dos seus serviços" className="md:block hidden bg-white px-8 py-12 mb-8 lg:p-24 md:w-auto h-auto md:max-h-[400px] lg:max-h-[500px] object-contain !rounded-none" />
-              <img src="/portfolio/ptchris/Screen7.png" alt="Printscreen da Avaliação do profissional" 
-              className="lg:relative w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain md:shadow-xl md:mr-0 px-4 pb-4 md:px-0" />
+              <img src="/portfolio/ptchris/Screen7.png" alt="Printscreen da Avaliação do profissional"
+                className="lg:relative w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain md:shadow-xl md:mr-0 px-4 pb-4 md:px-0" />
             </div>
 
           </div>
@@ -78,7 +77,7 @@ export default function FalaComAChris() {
         </div>
       </section>
 
-      <OtherProjects currentId="fala-com-a-chris" />
+      <OtherProjects currentId="chris-app" />
     </main>
   );
 }
