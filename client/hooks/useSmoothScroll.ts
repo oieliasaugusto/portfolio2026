@@ -27,17 +27,49 @@ export function useSmoothScroll() {
 
     lenisRef.current = lenis;
 
+    // Intercepta todos os cliques em links de âncora da mesma página
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest("a");
+      
+      if (
+        anchor && 
+        anchor.hash && 
+        anchor.origin === window.location.origin && 
+        anchor.pathname === window.location.pathname
+      ) {
+        e.preventDefault();
+        if (lenisRef.current) {
+          lenisRef.current.scrollTo(anchor.hash, { offset: -80, duration: 1.2 });
+          // Atualiza a URL sem causar o salto nativo do navegador
+          window.history.pushState(null, "", anchor.hash);
+        }
+      }
+    };
+    
+    document.addEventListener("click", handleAnchorClick);
+
     return () => {
+      document.removeEventListener("click", handleAnchorClick);
       lenis.destroy();
       gsap.ticker.remove(tickerCallback);
       lenisRef.current = null;
     };
   }, []);
 
-  // Reset scroll to top on every route change — instant, no animation
+  // Lida com mudança de rotas (cross-page navigation) e hashes
   useEffect(() => {
     if (lenisRef.current) {
-      lenisRef.current.scrollTo(0, { immediate: true });
+      if (location.hash) {
+        // Pequeno delay para garantir que a nova página foi renderizada
+        const timer = setTimeout(() => {
+          lenisRef.current?.scrollTo(location.hash, { offset: -80, duration: 1.2 });
+        }, 150);
+        return () => clearTimeout(timer);
+      } else {
+        // Se não tiver hash, vai para o topo instantaneamente
+        lenisRef.current.scrollTo(0, { immediate: true });
+      }
     }
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 }

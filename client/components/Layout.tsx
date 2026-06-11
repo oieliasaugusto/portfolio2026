@@ -55,20 +55,33 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <nav className="hidden md:flex items-center gap-6 md:gap-8">
             <Link
               to="/sobre"
-              className="text-xs tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className={`text-xs tracking-[0.2em] uppercase transition-all duration-300 font-light ${
+                location.pathname === "/sobre" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+              }`}
             >
               Sobre
             </Link>
 
             <Link
               to="/services"
-              className="text-xs tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+              className={`text-xs tracking-[0.2em] uppercase transition-all duration-300 font-light ${
+                location.pathname === "/services" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+              }`}
             >
               Serviços
             </Link>
 
             <Link
-              to="/contato"
+              to="/portfolio"
+              className={`text-xs tracking-[0.2em] uppercase transition-all duration-300 font-light ${
+                location.pathname === "/portfolio" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+              }`}
+            >
+              Portfolio
+            </Link>
+
+            <Link
+              to="/services#contact"
               className="text-xs tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
             >
               Contato
@@ -99,19 +112,32 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                   <Link
                     to="/sobre"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                    className={`text-lg tracking-[0.2em] uppercase transition-all duration-300 font-light ${
+                      location.pathname === "/sobre" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+                    }`}
                   >
                     Sobre
                   </Link>
                   <Link
                     to="/services"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
+                    className={`text-lg tracking-[0.2em] uppercase transition-all duration-300 font-light ${
+                      location.pathname === "/services" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+                    }`}
                   >
                     Serviços
                   </Link>
                   <Link
-                    to="/contato"
+                    to="/portfolio"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`text-lg tracking-[0.2em] uppercase transition-all duration-300 font-light ${
+                      location.pathname === "/portfolio" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+                    }`}
+                  >
+                    Portfolio
+                  </Link>
+                  <Link
+                    to="/services#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="text-lg tracking-[0.2em] uppercase hover:text-[hsl(var(--tertiary))] transition-all duration-300 font-light"
                   >

@@ -50,7 +50,7 @@ export default function Services() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="#form"
+              href="#contact"
               className="w-full sm:w-auto text-center bg-[#5B51D8] hover:bg-[#4A40C7] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-[#5B51D8]/20 hover:scale-[1.02]"
             >
               Quero Começar
@@ -119,10 +119,9 @@ export default function Services() {
         <div className="w-full max-w-[1000px] mx-auto">
 
           <div className="mb-20 md:text-center">
-            <h2 className="text-xs uppercase tracking-[0.3em] text-[#8B83FF] mb-3 font-mono">Workflow</h2>
             <h3 className="text-3xl md:text-4xl font-semibold">Como vamos trabalhar juntos</h3>
-            <p className="text-white/50 font-light mt-4 max-w-lg md:mx-auto text-sm md:text-base">
-              Uma esteira simples e transparente para tirar o seu projeto do papel sem complicações técnicas.
+            <p className="text-white/50 font-light mt-4 max-w-2xl md:mx-auto text-sm md:text-base">
+              Um processo transparente e descomplicado para tirar o seu projeto do papel.
             </p>
           </div>
 
@@ -132,20 +131,31 @@ export default function Services() {
             {/* INÍCIO (NÃO-CARD): Identificação do problema */}
             <div className="flex flex-col items-center">
               {/* Contorno cinza do badge acentuado de border-white/10 para border-white/25 */}
-              <div className="flex items-center gap-3 bg-white/5 border border-white/25 px-4 py-2 rounded-full backdrop-blur-sm">
+              {/* <div className="flex items-center gap-3 bg-white/5 border border-white/25 px-4 py-2 rounded-full backdrop-blur-sm">
                 <div className="text-white/80 font-mono text-xs uppercase tracking-wider">fase 1</div>
                 <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
                 <span className="text-xs md:text-sm font-medium tracking-wide text-white/90">
                   Identificação do Problema
                 </span>
+              </div> */}
+              <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
+                <span className="absolute top-4 right-4 text-xs font-mono px-2 py-0.5 bg-[#38761d] rounded text-white">
+                  OK
+                </span>
+                <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 1</div>
+                <h4 className="text-xl font-bold mb-3 text-white">Identificação do Problema</h4>
+                <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
+                  Você já entendeu que precisa de um posicionamento digital estratégico. Lucra offline e às vezes online, mas não tem clareza de como profissionalizar sua presença digital, nem estratégias claras para escalar seus resultados.
+                </p>
               </div>
+
               {/* Linha Conectora com presença acentuada */}
               <div className="w-[2px] h-12 bg-gradient-to-b from-white/25 to-[#5B51D8]" />
             </div>
 
             {/* CARD 01 - ALINHAMENTO */}
             <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-[#5B51D8] bg-[#5B51D8]/05 shadow-xl shadow-[#5B51D8]/5 backdrop-blur-sm relative group">
-              <span className="absolute top-4 right-4 text-xs font-mono px-2 py-0.5 bg-[#5B51D8] rounded text-white animate-pulse">
+              <span className="absolute top-4 right-4 text-xs font-mono px-2 py-0.5 bg-[#5B51D8] rounded text-white">
                 Você está aqui
               </span>
               <div className="text-[#8B83FF] font-mono text-xs uppercase tracking-wider mb-2">fase 2</div>
@@ -188,7 +198,7 @@ export default function Services() {
               <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 5</div>
               <h4 className="text-xl font-bold mb-3 text-white">Construção & Código</h4>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                Transformamos o visual aprovado em uma página real, extremamente rápida, segura e totalmente adaptada para funcionar perfeitamente em celulares e computadores.
+                O visual aprovado se torna uma página real, rápida, segura e totalmente adaptada para funcionar perfeitamente em celulares e computadores.
               </p>
             </div>
 
@@ -211,7 +221,7 @@ export default function Services() {
       </section>
 
       {/* 5. FORMULÁRIO DE CONTATO (ÂNCORA AUTOMÁTICA #form) */}
-      <div id="form">
+      <div id="contact">
         <ContactForm />
       </div>
     </div>
