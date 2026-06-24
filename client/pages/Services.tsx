@@ -152,7 +152,7 @@ export default function Services() {
               <div className="text-[#8B83FF] font-mono text-xs uppercase tracking-wider mb-2">fase 2</div>
               <h4 className="text-xl font-bold mb-3 text-white">Alinhamento & Briefing</h4>
               <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
-                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios, para então definirmos a melhor solução. Tudo começa ao completar o <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">form de contato</a>.
+                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios, para então definirmos a melhor solução. Basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
               </p>
             </div>
 
