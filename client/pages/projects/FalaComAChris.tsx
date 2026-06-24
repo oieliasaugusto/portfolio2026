@@ -59,7 +59,7 @@ export default function FalaComAChris() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:flex-row items-center gap-8 md:gap-8 rounded-3xl bg-[#2170CC] px-4 py-8 lg:p-8 my-12 md:my-1">
-              <img src="/portfolio/ptchris/Resumo.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
+              <img src="/portfolio/ptchris/Resumo.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain  lg:hidden" />
               <img src="/portfolio/ptchris/Screen4.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
               <img src="/portfolio/ptchris/Screen5.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
               <img src="/portfolio/ptchris/Screen6.png" alt="" className="w-auto md:w-[280px] h-auto max-h-auto lg:max-h-[650px] object-contain" />
