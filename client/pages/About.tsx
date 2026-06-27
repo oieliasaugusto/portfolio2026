@@ -48,14 +48,14 @@ export default function About() {
       <div className="w-full max-w-[1000px] space-y-24 text-zinc-50 font-sans selection:bg-zinc-800">
 
 <figure className="Logos w-full  flex items-center justify-center flex-row wrap gap-8">
-  <img src="../../public/logos/FRM.png" alt="Fundação Roberto Marinho" />
-  <img src="../../public/logos/ITURRI.png" alt="ITURRI" />
-  <img src="../../public/logos/KODIE.png" alt="KODIE Academy" />
-  <img src="../../public/logos/Blip.png" alt="Blip" />
-  <img src="../../public/logos/Labominas.png" alt="Labominas" />
-  {/* <img src="../../public/logos/Wiligent.png" alt="Wiligent" />
-  <img src="../../public/logos/Chris.png" alt="Fala com a Chris" /> */}
-  <img src="../../public/logos/Taaqui.png" alt="TAAQUI" />
+  <img src="/logos/FRM.png" alt="Fundação Roberto Marinho" />
+  <img src="/logos/ITURRI.png" alt="ITURRI" />
+  <img src="/logos/KODIE.png" alt="KODIE Academy" />
+  <img src="/logos/Blip.png" alt="Blip" />
+  <img src="/logos/Labominas.png" alt="Labominas" />
+  {/* <img src="/logos/Wiligent.png" alt="Wiligent" />
+  <img src="/logos/Chris.png" alt="Fala com a Chris" /> */}
+  <img src="/logos/Taaqui.png" alt="TAAQUI" />
 </figure>
 
 <div>
@@ -63,19 +63,19 @@ export default function About() {
 
 <figure className="Logos w-full flex pb-0 items-center justify-center flex-row wrap gap-12 h-8">
   
-      <img src="../../public/logos/Figma.png" alt="Figma" />
-      <img src="../../public/logos/Antigravity.webp" alt="Antigravity" />
-      <img src="../../public/logos/After.png" alt="After Effects" />
-      <img src="../../public/logos/Magnific.png" alt="Magnific" />
-      <img src="../../public/logos/Cavalry.png" alt="Cavalry" />
-      <img src="../../public/logos/Photoshop.png" alt="Photoshop" />
-      <img src="../../public/logos/Affinity.png" alt="Affinity" />
+      <img src="/logos/Figma.png" alt="Figma" />
+      <img src="/logos/Antigravity.webp" alt="Antigravity" />
+      <img src="/logos/After.png" alt="After Effects" />
+      <img src="/logos/Magnific.png" alt="Magnific" />
+      <img src="/logos/Cavalry.png" alt="Cavalry" />
+      <img src="/logos/Photoshop.png" alt="Photoshop" />
+      <img src="/logos/Affinity.png" alt="Affinity" />
 
     {/* LINGUAGENS */}
-      <img src="../../public/logos/html.png" alt="HTML" />
-      <img src="../../public/logos/css.png" alt="CSS" />
+      <img src="/logos/html.png" alt="HTML" />
+      <img src="/logos/css.png" alt="CSS" />
 
-      {/* <img src="../../public/logos/Illustrator.png" alt="Illustrator" /> */}
+      {/* <img src="/logos/Illustrator.png" alt="Illustrator" /> */}
 
   </figure>
 </div>
