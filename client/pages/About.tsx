@@ -32,7 +32,7 @@ export default function About() {
                 <h2 className="text-3xl lg:text-4xl font-bold text-[hsl(var(--foreground))] mb-2 leading-tight">
                   Elias Augusto</h2>
               </div>
-              <p className="text-[hsl(var(--tertiary))] text-sm font-bold uppercase tracking-[0.2em] mb-4">
+              <p className="text-[hsl(var(--tertiary))] text-md uppercase tracking-[0.2em] mb-6">
                 Designer digital</p>
               <p className="text-[hsl(var(--muted-foreground))] text-sm md:text-md font-light leading-relaxed mb-4">
                 Sou um profissional com habilidades multidisciplinares que se integram, permitindo a criação de ecossistemas digitais: de interfaces digitais funcionais e intuitivas (UI/UX) ao desenvolvimento low-code acelerado por IA.
@@ -64,7 +64,7 @@ export default function About() {
 <figure className="Logos w-full flex pb-0 items-center justify-center flex-row wrap gap-12 h-8">
   
       <img src="/logos/Figma.png" alt="Figma" />
-      <img src="/logos/Antigravity.webp" alt="Antigravity" />
+      <img src="/logos/Antigravity.png" alt="Antigravity" />
       <img src="/logos/After.png" alt="After Effects" />
       <img src="/logos/Magnific.png" alt="Magnific" />
       <img src="/logos/Cavalry.png" alt="Cavalry" />
@@ -73,7 +73,7 @@ export default function About() {
 
     {/* LINGUAGENS */}
       <img src="/logos/html.png" alt="HTML" />
-      <img src="/logos/css.png" alt="CSS" />
+      <img src="/logos/scss.png" alt="SCSS" />
 
       {/* <img src="/logos/Illustrator.png" alt="Illustrator" /> */}
 
