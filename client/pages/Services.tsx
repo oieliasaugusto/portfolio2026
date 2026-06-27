@@ -17,7 +17,7 @@ export default function Services() {
     <div className="min-h-screen text-white bg-black selection:bg-[#5B51D8]/30 selection:text-white scroll-smooth">
 
       {/* 1. HERO SECTION (COM VÍDEO EM LOOP NO BACKGROUND) */}
-      <section className="relative min-h-[90vh] pt-40 pb-20 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center border-b border-white/5 overflow-hidden">
+      <section className="relative min-h-[90vh] pt-24 pb-20 px-6 md:px-10 lg:px-14 xl:px-40 flex items-center justify-center border-b border-white/5 overflow-hidden">
 
         {/* Container do Vídeo de Background */}
         <div className="absolute w-full lg:w-[40%] lg:translate-x-[75%] translate-y-[40%] bottom-0 inset-0 h-full pointer-events-none overflow-hidden">
@@ -38,7 +38,7 @@ export default function Services() {
         {/* Conteúdo da Hero */}
         <div className="max-w-[1200px] text-center mb-[20%] z-20 backdrop-blur-[2px] py-0 rounded-3xl">
 
-          <h1 className="text-3xl md:text-4xl lg:max-w-4xl mx-auto !leading-[1.4] mb-6">
+          <h1 className="text-3xl md:text-4xl lg:max-w-4xl mx-auto !leading-[1.4] mb-4">
             Valorize sua oferta. Transforme visitantes em clientes.
           </h1>
 
@@ -134,8 +134,8 @@ export default function Services() {
                   Concluída
                 </span>
                 <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 1</div>
-                <h4 className="text-xl font-bold mb-3 text-white">Identificação do Problema</h4>
-                <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
+                <h4 className="text-xl mb-3 text-white">Identificação do Problema</h4>
+                <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
                   Você já entendeu que precisa de um posicionamento digital estratégico. Lucra offline e às vezes online, mas não tem clareza de como profissionalizar sua presença digital, nem estratégias claras para escalar seus resultados.
                 </p>
               </div>
@@ -150,9 +150,9 @@ export default function Services() {
                 Você está aqui
               </span>
               <div className="text-[#8B83FF] font-mono text-xs uppercase tracking-wider mb-2">fase 2</div>
-              <h4 className="text-xl font-bold mb-3 text-white">Alinhamento & Briefing</h4>
+              <h4 className="text-xl mb-3 text-white">Alinhamento Inicial</h4>
               <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
-                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios, para então definirmos a melhor narrativa, a melhor solução. Para isso, basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
+                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios para então analisar o cenário e propor um caminho claro que se estenda até os seus objetivos. Para isso, basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
               </p>
             </div>
 
@@ -163,9 +163,9 @@ export default function Services() {
             {/* Contorno cinza acentuado de border-white/5 para border-white/20 */}
             <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
               <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 3</div>
-              <h4 className="text-xl font-bold mb-3 text-white">Visual & Proposta</h4>
-              <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                Criamos um visual único e marcante feito sob medida para sua empresa. Nada de modelos prontos: moldamos a página para guiar a atenção do cliente direto para a compra.
+              <h4 className="text-xl mb-3 text-white">Proposta Estrutural e Estratégica</h4>
+              <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
+                Criamos o esqueleto estratégico da sua página antes de qualquer linha refinada de design ou código. Aqui, definimos onde e como posicionar as informações: como comunicar promessas, apresentar produtos, a estrutura dos formulários e o posicionamento das chamadas de ação (CTAs).
               </p>
             </div>
 
@@ -175,21 +175,9 @@ export default function Services() {
             {/* CARD 03 - APROVAÇÃO */}
             <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
               <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 4</div>
-              <h4 className="text-xl font-bold mb-3 text-white">Validação & Ajustes</h4>
-              <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                Você analisa o modelo interativo antes dele ir ao ar. Revisamos juntos cada detalhe, texto e imagem até ficar exatamente do jeito que você sonhou.
-              </p>
-            </div>
-
-            {/* Linha Conectora cinza acentuada */}
-            <div className="w-[2px] h-12 bg-white/20" />
-
-            {/* CARD 04 - DESENVOLVIMENTO */}
-            <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
-              <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 5</div>
-              <h4 className="text-xl font-bold mb-3 text-white">Construção & Código</h4>
-              <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                O visual aprovado se torna uma página real, rápida, segura e totalmente adaptada para funcionar perfeitamente em celulares e computadores.
+              <h4 className="text-xl mb-3 text-white">Desenvolvimento e Validação</h4>
+              <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
+                Transformamos a estrutura e a estratégia aprovadas em uma página real, extremamente rápida e moderna, com alta fidelidade ao que foi planejado. Todo o projeto é desenvolvido com código limpo, totalmente responsivo e otimizado para SEO, garantindo uma adaptação completa para telas de computadores e celulares.
               </p>
             </div>
 
@@ -205,6 +193,7 @@ export default function Services() {
                   Entrega do Projeto
                 </span>
               </div>
+              <p className="text-sm mt-6 tracking-widest text-white/70">30-90 DIAS</p>
             </div>
 
           </div>
