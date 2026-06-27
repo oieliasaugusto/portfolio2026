@@ -3,7 +3,7 @@
 import React from 'react';
 
 const BadgeCircularAntiHorario: React.FC = () => {
-    const texto = "DISPONÍVEL PARA SERVIÇOS • ";
+    const texto = "DISPONÍVEIS SERVIÇOS ";
     const letras = texto.split("");
     const raio = 85;
 

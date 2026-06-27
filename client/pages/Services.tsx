@@ -39,7 +39,7 @@ export default function Services() {
         <div className="max-w-[1200px] text-center mb-[20%] z-20 backdrop-blur-[2px] py-0 rounded-3xl">
 
           <h1 className="text-3xl md:text-4xl lg:max-w-4xl mx-auto !leading-[1.4] mb-6">
-            Valorize sua oferta. Transforme visitantes em compradores.
+            Valorize sua oferta. Transforme visitantes em clientes.
           </h1>
 
           <p className="text-sm md:text-lg text-white/60 font-light leading-relaxed mb-10 mx-auto max-w-2xl">
@@ -57,7 +57,7 @@ export default function Services() {
               href="/"
               className="w-full sm:w-auto text-center bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium px-8 py-4 rounded-xl transition-all duration-300"
             >
-              Ver Portfólio
+              Ver Cases
             </a>
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function Services() {
 
               <div className="w-full max-w-[650px] p-6 md:p-8 rounded-2xl border border-white/20 bg-black hover:border-white/30 transition-colors duration-300 relative group">
                 <span className="absolute top-4 right-4 text-xs font-mono px-2 py-0.5 bg-[#38761d] rounded text-white">
-                  OK
+                  Concluída
                 </span>
                 <div className="text-white/40 font-mono text-xs uppercase tracking-wider mb-2">fase 1</div>
                 <h4 className="text-xl font-bold mb-3 text-white">Identificação do Problema</h4>
@@ -152,7 +152,7 @@ export default function Services() {
               <div className="text-[#8B83FF] font-mono text-xs uppercase tracking-wider mb-2">fase 2</div>
               <h4 className="text-xl font-bold mb-3 text-white">Alinhamento & Briefing</h4>
               <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
-                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios, para então definirmos a melhor narrativa, a melhor solução. Basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
+                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios, para então definirmos a melhor narrativa, a melhor solução. Para isso, basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
               </p>
             </div>
 
