@@ -47,7 +47,7 @@ export default function About() {
       {/* --- Seção de Trajetória Integrada --- */}
       <div className="w-full max-w-[1000px] space-y-24 text-zinc-50 font-sans selection:bg-zinc-800">
 
-<figure className="Logos w-full flex items-center justify-center flex-row wrap gap-8">
+<figure className="Logos w-full  flex items-center justify-center flex-row wrap gap-8">
   <img src="../../public/logos/FRM.png" alt="Fundação Roberto Marinho" />
   <img src="../../public/logos/ITURRI.png" alt="ITURRI" />
   <img src="../../public/logos/KODIE.png" alt="KODIE Academy" />
@@ -61,7 +61,7 @@ export default function About() {
 <div>
 <h2 className="text-2xl font-thin text-center pb-12 text-zinc-400 tracking-wider">Stack</h2>
 
-<figure className="Logos w-full flex items-center justify-center flex-row wrap gap-12 h-8">
+<figure className="Logos w-full flex pb-0 items-center justify-center flex-row wrap gap-12 h-8">
   
       <img src="../../public/logos/Figma.png" alt="Figma" />
       <img src="../../public/logos/Antigravity.webp" alt="Antigravity" />
