@@ -123,9 +123,9 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                     Serviços
                   </Link>
                   <Link
-                    to="/portfolio"
+                    to="/"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-lg tracking-[0.2em] uppercase transition-all duration-300 font-light ${location.pathname === "/portfolio" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
+                    className={`text-lg tracking-[0.2em] uppercase transition-all duration-300 font-light ${location.pathname === "/" ? "text-[hsl(var(--tertiary))]" : "hover:text-[hsl(var(--tertiary))]"
                       }`}
                   >
                     Portfolio

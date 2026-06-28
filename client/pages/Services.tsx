@@ -152,7 +152,7 @@ export default function Services() {
               <div className="text-[#8B83FF] font-mono text-xs uppercase tracking-wider mb-2">fase 2</div>
               <h4 className="text-xl mb-3 text-white">Alinhamento Inicial</h4>
               <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
-                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios para então analisar o cenário e propor um caminho claro que se estenda até os seus objetivos. Para isso, basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
+                Vamos entender juntos seus objetivos de negócio, suas vantagens e desafios para então analisar o seu cenário e propor uma estrutura de projeto adequada a sua realidade. Para isso, basta <a href="#form" className="underline hover:text-[#8B83FF] cursor-pointer">entrar em contato</a>.
               </p>
             </div>
 
